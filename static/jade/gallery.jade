@@ -1,0 +1,15 @@
+extends jade-parts/docwrapper
+
+append pagetitle
+    |Our All Photos and Videos
+    
+append pagename
+    |gallery
+    
+append sitewellcome
+    //- Included Page heading And Page Nav
+    include jade-parts/page-heading-and-nav.jade
+    
+append sitecontent
+    //- Included Gallery Content
+    include jade-parts/gallery-content.jade

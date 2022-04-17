@@ -1,0 +1,23 @@
+extends jade-parts/docwrapper
+    
+append sitecontent
+    .error-page-area.bg-pattern(data-jarallax='{"speed": 0.3, "imgSrc": "images/error-bg.jpg" }')
+        .container
+            .row
+                .col-md-7.full-width-content
+                    .error-page-content.text-center
+                        h3.error-title
+                            |page not found
+                        .row
+                            .col-md-5
+                                img(src="images/error-content.png" alt="error-content")
+                            .col-md-7
+                                h2.error-404
+                                    |<span>404</span>Component not found
+                                a.btn.btn-details.link-home(href="index.html")
+                                    |Go To Home
+                    <!--/.error-page-content-->
+                <!--/.col-md-12-->
+            <!--/.row-->
+        <!--/.container-->
+    <!--/.error-page-area-->

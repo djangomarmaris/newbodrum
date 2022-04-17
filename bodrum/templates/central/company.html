@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Bayiliklerimiz</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<section class="our-menu-section zero-pd-top bg-white-smoke">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title-area text-center">
+                        <h2 class="section-title italic-style">
+                            <br> Bayilikerimiz</h2>
+                        <p class="section-title-dec">Bodrum Marmaris Mutfak</p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="container">
+
+                    <div class="menu-content-area">
+                        <div class="menu-item-slider owl-carousel">
+                            <div class="item">
+                                <div class="row">
+                                    {% for company in companys %}
+                                    <div class="col-md-3 col-sm-6 col-xs-6">
+                                        <div class="menu-item-two">
+                                            <div class="image-area">
+                                                <a href="{{company.katalog.url}}" target="_blank">
+                                                    <img src="{% if company.image %}{{ company.image.url }}{% else %}{% endif %}" alt="menu-item">
+                                                </a>
+                                            </div>
+                                            <div class="menu-content text-center">
+                                                <h5 class="menu-title">
+                                                    <a href="#">{{company.name}}</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+
+                                    <div class="clearfix"></div>
+
+                                </div><!--/.row-->
+                            </div><!--/.item-->
+
+                        </div><!--/.menu-item-slider-->
+                    </div><!--/.menu-content-area-->
+
+                </div><!--/.container-->
+            </div><!--/.row-->
+        </div><!--/.container-fluid-->
+    </section><!--/.our-menu-section-->
+
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

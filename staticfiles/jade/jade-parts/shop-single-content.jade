@@ -1,0 +1,192 @@
+.shop-single-area.bg-white-smoke
+    .container
+        .row
+            .col-md-6.shop-single-content
+                .shop-single-thumb
+                    .shop-thumb-full.owl-carousel
+                        .item
+                            img(src="images/rooms/room-single.jpg" alt="room-gallery")                        
+                        .item
+                            img(src="images/rooms/room-single.jpg" alt="room-gallery")                        
+                        .item
+                            img(src="images/rooms/room-single.jpg" alt="room-gallery")
+                        .item
+                            img(src="images/rooms/room-single.jpg" alt="room-gallery")
+
+                    .shop-thumb-list.owl-carousel
+                        .item
+                            img(src="images/rooms/room-gallery/thumb-1.jpg" alt="room-gallery")                        
+                        .item
+                            img(src="images/rooms/room-gallery/thumb-2.jpg" alt="room-gallery")                        
+                        .item
+                            img(src="images/rooms/room-gallery/thumb-3.jpg" alt="room-gallery")
+                        .item
+                            img(src="images/rooms/room-gallery/thumb-4.jpg" alt="room-gallery")
+                        .item
+                            img(src="images/rooms/room-gallery/thumb-2.jpg" alt="room-gallery") 
+                <!--/.shop-single-thumb-->
+
+                .single-shop.list.mobile-extend
+                    .shop-info
+                        .shop-description.clearfix
+                            h4
+                                | Shop Description
+                            p
+                                | Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Etiam eget urna augue. Aen ean posuere pharetra tortor eu sodales. Aenean vitae facilisis ligula. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et male suada fame ac turpis egestas. Aenean vitae facilisis ligula. Quisque dictum neque in lectus cur sushts congue. Phasellus sodales condimentum rutrum.
+                        <!--/.room-description-->
+                    <!--/.room-info-->
+                <!--/.shop-single-content-->
+                .hidden-md.hidden-lg.text-center.extend-btn
+                    span.extend-icon
+                        i.fa.fa-angle-down
+            <!--/.col-md-6-->
+            .col-md-6.shop-single-sidebar                   
+                h2.shop-single-title
+                    | Spicy Fride Rice And Bacon
+                .rating
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                .price
+                    h2 $ 20
+                .additional-description
+                    p Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Etiam eget urna augue. Aen ean posuere pharetra tortor eu sodales. Aenean vitae facilisis ligula. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et male suada fame ac turpis egestas. Aenean vitae facilisis ligula. Quisque dictum neque in lectus cur sushts congue. Phasellus sodales condimentum rutrum.
+                form.cart(method="post")
+                    .quantity.buttons_added
+                        .quantity
+                            input(type="number" step="1" min="1" max="100" name="quantity" value="1" title="Qty" class="input-text qty text" size="4")
+                            input(class="minus" type="button" value="-")
+                            input(class="plus" type="button" value="+")
+                            button(type="submit" class="single_add_to_cart_button")
+                                |Add to cart
+                .review-single-content.clearfix
+                    .heading-area.clearfix
+                        h2 Review 1
+                        span.pull-right
+                            a.btn(href="#")
+                                | All Review
+                    .single-client-review.box-radius.clearfix
+                        header.review-header
+                            .date
+                                |<strong>Dec 25, 2016</strong>
+                            .review-rating.rating.pull-right
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                            h2.review-title.text-center
+                                |“Gorgeous!”
+                         <!--/.review-header-->
+                        .review-content.text-center
+                            p
+                                |The resort is beautiful with an excellent spa. The spa rooms have a glass floor that looks down on the coral reef below. I saw many fish and moray eels as I was getting a massage. It was a wild and luxurious experience! The food and cocktails were excellent!
+                         <!--/.review-content-->
+                        footer.review-footer
+                            .client-name
+                                strong
+                                    |By Rakib smith
+                            .client-profession.pull-right
+                                |porgrammer
+                        <!--/.review-footer-->
+                    <!--/.single-client-review-->
+                    form.review-form(action="#")
+                        h2.book-form-title
+                            | Add A Review
+                        .row
+                            .col-md-6
+                                .input
+                                    input.form-controller(type="text" placeholder="Name")
+                                <!--/.input-->
+                            <!--/.col-md-12-->
+
+                            .col-md-6
+                                .input
+                                    input.form-controller(type="email" placeholder="E-mail")
+                                <!--/.input-->
+                            <!--/.col-md-12-->                        
+
+                            .col-md-12
+                                label Your Rating
+                                .rating
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                            <!--/.col-md-12-->
+
+                            .col-md-12
+                                label Your Review
+                                .input
+                                    textarea.form-controller(name="message" placeholder="Message")
+                                <!--/.input-->
+                            <!--/.col-md-12-->
+                            
+                            .col-md-12
+                                a.btn.btn-default(href="#")
+                                    | Submit
+                                <!--/.btn-->
+                            <!--/.col-md-12-->
+                        <!--/.row-->  
+                    <!--/.online-book-form-->
+            <!--/.col-md-6-->
+        <!--/.row-->
+        .row.related-shop-area
+            .col-md-12
+                h2.section-title
+                    | Related Shop
+            .clearfix
+            .col-md-3.col-sm-6.col-xs-6
+                .menu-item-two
+                    .image-area
+                        a(href="#")
+                            img(src="images/menu/menu-two-1.jpg" alt="menu-item")
+                    .menu-content.text-center
+                        .item-price
+                            .price-inner
+                                | $25
+                        h5.menu-title
+                            a(href="#")
+                                | Deer Steak with Potatoes
+            .col-md-3.col-sm-6.col-xs-6
+                .menu-item-two
+                    .image-area
+                        a(href="#")
+                            img(src="images/menu/menu-two-2.jpg" alt="menu-item")
+                    .menu-content.text-center
+                        .item-price
+                            .price-inner
+                                | $25
+                        h5.menu-title
+                            a(href="#")
+                                | Deer Steak with Potatoes
+            .col-md-3.col-sm-6.col-xs-6
+                .menu-item-two
+                    .image-area
+                        a(href="#")
+                            img(src="images/menu/menu-two-3.jpg" alt="menu-item")
+                    .menu-content.text-center
+                        .item-price
+                            .price-inner
+                                | $25
+                        h5.menu-title
+                            a(href="#")
+                                | Deer Steak with Potatoes
+            .col-md-3.col-sm-6.col-xs-6
+                .menu-item-two
+                    .image-area
+                        a(href="#")
+                            img(src="images/menu/menu-two-4.jpg" alt="menu-item")
+                    .menu-content.text-center
+                        .item-price
+                            .price-inner
+                                | $25
+                        h5.menu-title
+                            a(href="#")
+                                | Deer Steak with Potatoes
+        <!--/.row-->
+    <!--/.container-->
+<!--/.shop-single-area-->

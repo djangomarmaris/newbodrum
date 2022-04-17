@@ -1,0 +1,32 @@
+extends jade-parts/docwrapper
+//-    
+append sitecontent
+    .coming-soon-page.jarallax(data-jarallax='{"speed": 0.3, "imgSrc": "images/error-bg.jpg" }')
+        .container
+            .row
+                .col-md-12
+                    .section-title-area.text-center
+                        h2.section-title
+                            |Coming Soon
+                        p.section-title-dec
+                            |We are working on something awesome!
+                    <!--/.section-title-area-->
+                <!--/.col-md-12-->
+            <!--/.row-->
+            .row
+                .col-md-7.col-full-width
+                    .timer-content-area.text-center
+                        .countdown-time(data-year="2018" data-month="6" data-day="5" data-hour="12" data-minutes="15")
+                        .social-share
+                            a(href="#")
+                                i.fa.fa-facebook
+                            a(href="#")
+                                i.fa.fa-twitter
+                            a(href="#")
+                                i.fa.fa-google-plus
+                        <!--/.social-share-->
+                    <!--/.timer-content-area-->
+                <!--/.col-md-7-->
+            <!--/.row-->
+        <!--/.container-->
+    <!--/.coming-soon-page-->

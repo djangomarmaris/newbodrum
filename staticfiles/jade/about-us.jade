@@ -1,0 +1,18 @@
+extends jade-parts/docwrapper
+
+append pagetitle
+    | About The Live Kitchen
+
+append pagesubtitle
+    | Why you choose us
+
+append pagename
+    | About us
+    
+append sitewellcome
+    //- Included Page heading And Page Nav
+    include jade-parts/page-heading-and-nav.jade
+    
+append sitecontent
+    //- Included Home Page Main Content
+    include jade-parts/about-us-content.jade

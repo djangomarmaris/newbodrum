@@ -1,0 +1,421 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Bodrum Marmaris Mutfak</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+ <div class="welcome-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pogoSlider js-main-slider">
+                    <div data-transition="shrinkReveal" data-duration="1000" style="background-image:url({% static 'sliderback.jpeg' %});" class="pogoSlider-slide style-one">
+                        <h2 class="slider-heading-main">Welcome
+                            <span>Bodrum Marmaris Mutfak</span>
+                        </h2><!--/.water-wrap-->
+                        <div class="slider-container">
+                            <div class="slider-main-content">
+                                <div class="image-before">
+                                    <div  data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
+                                        <h2>Marmaris
+                                            <span>Mutfak</span>
+                                        </h2>
+                                    </div>
+                                    <div class="content">
+                                        <div data-in="slideUp" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Profesyonel</div>
+                                    </div>
+                                </div>
+                                <div data-in="slideDown" data-out="slideUp" data-duration="750" data-delay="500" class="image-content pogoSlider-slide-element">
+                                    <img src="{% static 'images/slider/slider-01.png' %}" alt="slider-burger">
+                                </div>
+
+                                <div class="image-after">
+                                    <div data-in="slideRight" data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
+                                        <h2>Bodrum
+                                            <span>Mutfak</span>
+                                        </h2>
+                                    </div>
+                                    <div class="content">
+                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Creative</div>
+                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Special Offer</div>
+                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Fast</div>
+                                    </div>
+                                </div>
+                            </div><!--/.image-content-->
+                        </div><!--/.slider-container-->
+                    </div>
+                    <div data-transition="shrinkReveal" data-duration="1000" style="background-image:url({% static 'sliderback.jpeg' %});" class="pogoSlider-slide style-two">
+                        <h2 data-in="slideDown" data-out="slideUp" data-duration="750" data-delay="600" class="slider-heading-main pogoSlider-slide-element">Welcome
+                            <span>Bodrum Marmaris Mutfak</span>
+                        </h2><!--/.water-wrap-->
+                        <div class="slider-container">
+                            <div class="slider-main-content">
+                                <div class="image-before">
+                                    <div data-in="slideLeft" data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
+                                        <h2 style="font-size:20px;">Marmaris</h2>
+                                    </div>
+                                </div>
+                                <div data-in="slideDown" data-out="slideUp" data-duration="750" data-delay="500" class="image-content pogoSlider-slide-element">
+                                    <img src="{% static 'images/slider/slider-02.png' %}" alt="slider-burger">
+                                </div>
+                                <div class="image-after">
+                                    <div data-in="slideRight" data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
+                                        <h2>Bodrum Mutfak</h2>
+                                    </div>
+                                    <div class="content">
+                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-button pogoSlider-slide-element">
+                                            <a class="btn btn-default">Special Offer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--/.image-content-->
+                        </div><!--/.slider-container-->
+                    </div>
+                </div><!-- .pogoSlider -->
+            </div><!--/.row-->
+        </div><!--/.container-fluid-->
+    </div><!--/.welcome-slider-->
+
+ <section class="booking-with-chif margin-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <form action="#" class="online-book-form style-one color-one">
+                        <h2 class="book-form-title">Bize Yaz
+                            <span>Sana dönelim</span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <input type="text" placeholder="İsim" class="form-controller">
+                                </div><!--/.input-->
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <input type="email" placeholder="E-mail" class="form-controller">
+                                </div><!--/.input-->
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <input type="text" placeholder="Telefon" class="form-controller">
+                                </div><!--/.input-->
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <input type="text" placeholder="Başlık" class="form-controller">
+                                </div><!--/.input-->
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <textarea name="message" placeholder="Message" class="form-controller"></textarea>
+                                </div>
+                                <!--/.input-->
+                            </div><!--/.col-md-12-->
+                            <div class="col-md-12">
+                                <a href="#" class="btn btn-default">Gönder</a>
+                                <!--/.btn-->
+                            </div><!--/.col-md-12-->
+                        </div><!--/.row-->
+                    </form><!--/.online-book-form-->
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-8 col-sm-6">
+                    <div class="head-chif-details">
+                        <h2 class="heading-title">Nike Jahids</h2>
+                        <h5 class="sub-heading-title">Head Chef</h5>
+                        {% for write in writes %}
+                        <p> {{write.info}}</p>
+                        {% endfor %}
+                        <div class="chif-sign">
+                            <img src="{% static 'images/head-chip-sign.png' %}" alt="sign">
+                        </div>
+                        <a class="btn btn-default">More</a>
+                    </div><!--/.head-chif-details-->
+                    <div class="head-chif-image">
+                        <img src="{% static 'head-chip-image.png' %}" alt="head-chif-image">
+                    </div><!--/.head-chif-image-->
+                </div><!--/.col-md-8-->
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/.booking-with-chif-->
+
+<section class="our-gallery-section bg-white-smoke">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-align-title-area">
+                        <h2 class="section-align-title">Bizim
+                            <br>Özel
+                            <span>Mutfağımız</span>
+                        </h2>
+                        <p class="section-align-title-dec">Size
+                            <br> Özel Mutfak
+                            <br>Endüstiriyel ürünler</p>
+                        {% for special in specials %}
+                        <p>{{special.info}}</p>
+                        {% endfor %}
+                        <a href="gallery.html" class="btn btn-default">Galery</a>
+                    </div><!--/.section-align-title-area-->
+                </div><!--/.col-md-6-->
+
+                <div class="col-md-6">
+                    <div class="row gallery-item-content">
+                        {% for special in specials %}
+                        <div class="col-sm-6 col-sx-6 padding-reset">
+                            <a href="{% if special.image %}{{ special.image.url }}{% else %}{% endif %}" class="image-popup-btn">
+                                <img alt="Cup Of Coffee" src="{% if special.image %}{{ special.image.url }}{% else %}{% endif %}">
+                                <div class="overlay">
+                                    <h3>{{special.image_info}}</h3>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-sx-6 padding-reset">
+                            <a href="{% if special.image2 %}{{ special.image2.url }}{% else %}{% endif %}" class="image-popup-btn">
+                                <img alt="Cup Of Coffee" src="{% if special.image2 %}{{ special.image2.url }}{% else %}{% endif %}">
+                                <div class="overlay">
+                                    <h3>{{special.image_info2}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-sx-6 padding-reset">
+                            <a href="{% if special.image3 %}{{ special.image3.url }}{% else %}{% endif %}" class="image-popup-btn">
+                                <img alt="Cup Of Coffee" src="{% if special.image3 %}{{ special.image3.url }}{% else %}{% endif %}">
+                                <div class="overlay">
+                                    <h3>{{special.image_info3}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-sx-6 padding-reset">
+                            <a href="{% if special.image4 %}{{ special.image4.url }}{% else %}{% endif %}" class="image-popup-btn">
+                                <img alt="Cup Of Coffee" src="{% if special.image4 %}{{ special.image4.url }}{% else %}{% endif %}">
+                                <div class="overlay">
+                                    <h3>{{special.image_info4}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-sx-6 padding-reset">
+                            <a href="{% if special.image5 %}{{ special.image5.url }}{% else %}{% endif %}" class="image-popup-btn">
+                                <img alt="Snowpiercer" src="{% if special.image5 %}{{ special.image5.url }}{% else %}{% endif %}">
+                                <div class="overlay">
+                                    <h3>{{special.image_info5}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/.our-gallery-section-->
+<section class="our-experts-chefs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title-area style-two text-center">
+                        <h2 class="section-title">Sektörün tercihi</h2>
+                        <p class="section-title-dec">Bodrum Marmaris Mutfak</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                    <div id="experts-chefs-slider">
+                        <div class="tab-content text-center">
+                            <div id="chef-1" class="tab-pane fade in active">
+                                <div class="image-before hidden-sm hidden-xs">
+                                    <h2>I love
+                                        <span>to</span>
+                                        <span>Made</span>
+                                    </h2>
+                                </div>
+                                <div class="image-content">
+                                    <img src="{% static 'chef1.png' %}" alt="chef photo">
+                                    <h3 class="author-name">Ceyda Mendil</h3>
+                                    <h5 class="author-designation">Osmanlı Mutfağı</h5>
+                                </div>
+                                <div class="image-after hidden-sm hidden-xs">
+                                    <h2>Burger
+                                        <span>and</span>
+                                        <span>Pizza</span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div id="chef-2" class="tab-pane fade">
+                                <div class="image-before hidden-sm hidden-xs">
+                                    <h2>I love
+                                        <span>to</span>
+                                        <span>Cook</span>
+                                    </h2>
+                                </div>
+                                <div class="image-content">
+                                    <img src="{% static 'chef2.png' %}" alt="chef photo">
+                                    <h3 class="author-name">Rakib Smith</h3>
+                                    <h5 class="author-designation">İtalyan Mutfağı</h5>
+                                </div>
+                                <div class="image-after hidden-sm hidden-xs">
+                                    <h2>Indian
+                                        <span></span>
+                                        <span>Food</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div><!--/.carousel-inner-->
+                    </div><!--/.carousel-->
+                </div><!--/.col-md-12-->
+            </div><!--/.row-->
+        </div><!--/.container-->
+        <ul class="experts-chefs-nav">
+            <li class="active">
+                <a href="#chef-1" data-toggle="tab" class="nav-image">
+                    <img src="{% static 'chef1.png' %}" alt="chef photo">
+                </a>
+            </li>
+            <li>
+                <a href="#chef-2" data-toggle="tab" class="nav-image">
+                    <img src="{% static 'chef2.png' %}" alt="chef photo">
+                </a>
+            </li>
+        </ul>
+    </section><!--/.our-experts-chefs-->
+    <section class="our-customer-section">
+        <h2 class="water-wrap">Müşteri Yorumları</h2>
+        <!--/.water-wrap-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-full-width">
+                    <div class="customer-section-title-area text-center"> <i class="fa fa-quote-right"></i>
+                        <h2 class="section-title">
+                            <span>Mutlu Müşteri</span> Yorumları</h2>
+                    </div><!--/.customer-section-title-area-->
+                </div><!--/.col-md-8-->
+            </div><!--/.row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="customer-reviews owl-carousel">
+                        {% for comment in comments %}
+                        <div class="single-customer-review">
+                            <div class="customer-header">
+                                <img src="{% static 'images/customer/customer-1.png' %}" alt="customer" class="customer-thumb">
+                                <h3 class="customer-name">{{comment.name}} </h3>
+                                <p>{{comment.position}}</p>
+                            </div><!--/.customer-header-->
+                            <div class="customer-info">
+                                <p>{{comment.info}}</p>
+                                <div class="review-rating rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div><!--/.review-rating-->
+                            </div><!--/.customer-info-->
+                        </div><!--/.single-customer-review-->
+                        {% endfor %}
+                    </div><!--/#customer-reviews-->
+                </div><!--/.col-md-8-->
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/.our-customer-section-->
+<div id="footer-top-section" style="background-image:url({% static 'images/footer-pattern.jpg' %})">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title-area text-center">
+                        <h2 class="section-title">Bize Yazın
+                            <br>Sizleri Bekliyoruz</h2>
+                    </div><!--/.section-title-area-->
+                </div><!--/.col-md-12-->
+            </div><!--/.row-->
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="widget-area footer-sidebar-top-1">
+                        <aside class="widget clearfix widget_address">
+                            <div class="widget-title-area">
+                                <h4 class="widget-title">address</h4>
+                            </div><!--/.widget-title-area-->
+                            <div class="widget-content">
+                                <p>112/B - Road Number 08/A Dhanmondi, Dhaka, Bangladesh</p>
+                            </div>
+                        </aside><!--/.widget_address-->
+                    </div><!--/.footer-sidebar-top-1-->
+                </div><!--/.col-md-3-->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="widget-area footer-sidebar-top-2">
+                        <aside class="widget clearfix widget_call_us">
+                            <div class="widget-title-area">
+                                <h4 class="widget-title">call</h4>
+                            </div><!--/.widget-title-area-->
+                            <div class="widget-content">
+                                <p>+88 0215469875</p>
+                                <p>666 35874692050</p>
+                            </div>
+                        </aside><!--/.widget_call_us-->
+                    </div><!--/.footer-sidebar-top-2-->
+                </div><!--/.col-md-3-->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="widget-area footer-sidebar-top-3">
+                        <aside class="widget clearfix widget_mail_us">
+                            <div class="widget-title-area">
+                                <h4 class="widget-title">mail</h4>
+                            </div><!--/.widget-title-area-->
+                            <div class="widget-content">
+                                <p>yourmail@gmail.com</p>
+                                <p>Hotelrmail@gmail.com</p>
+                            </div>
+                        </aside><!--/.widget_mail_us-->
+                    </div><!--/.footer-sidebar-top-3-->
+                </div><!--/.col-md-3-->
+
+                <div class="col-sm-6 col-md-3">
+                    <div class="widget-area footer-sidebar-top-4">
+                        <aside class="widget clearfix widget_social_media">
+                            <div class="widget-title-area">
+                                <h4 class="widget-title">social Account</h4>
+                            </div><!--/.widget-title-area-->
+                            <div class="widget-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div><!--/.widget-social-->
+                        </aside> <!--/.widget_social_media-->
+                    </div><!--/.footer-sidebar-top-4-->
+                </div><!--/.col-md-3-->
+            </div><!--/.row-->
+        </div><!--/.container-fluid-->
+    </div><!--/#footer-top-section-->
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

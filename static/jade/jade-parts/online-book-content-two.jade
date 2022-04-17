@@ -1,0 +1,93 @@
+section.online-book-section.style-two
+    .container-fluid
+        .row
+            .col-md-3.pd-left.clearfix
+                .section-title-area
+                    .title-box.tb
+                        .title-box-text.tb-cell
+                            h2.section-title 
+                                |For rates &amp; Availability
+                        .tb-cell.box-inner
+                            .title-box-inner
+                                h3.section-name
+                                    |Search
+                                    span
+                                        |Room
+                                i.fa.fa-angle-right
+                    <!--/.site-header-->
+                <!--/.section-title-area-->
+            <!--/.col-md-12-->
+            .col-md-9.form-content
+                form.online-book-form(action="#")
+                    .row
+                        .col-md-3.col-lg-3.padding-left
+                            label.text-uppercase
+                                |Arrival Date
+                            .input.box-radius
+                                i.fa.fa-calendar
+                                input.calendar.form-controller(type="text" id="date-arrival" placeholder="Arrival Date")
+                            <!--/.input-->
+                        <!--/.col-md-3-->
+                        
+                        .col-md-3.col-lg-3.padding-left
+                            label.text-uppercase
+                                |Departure Date
+                            .input.box-radius
+                                i.fa.fa-calendar
+                                input.calendar.form-controller(type="text" id="date-departure" placeholder="Departure Date")
+                            <!--/.input-->
+                        <!--/.col-md-3-->
+                        
+                        .col-md-2.col-lg-1.padding-left
+                            label.text-uppercase
+                                |room
+                            .input.box-radius
+                                i.fa.fa-caret-down
+                                select(name="room")
+                                    option(value="1")
+                                        |1
+                                    option(value="2")
+                                        |2
+                                    option(value="3")
+                                        |3
+                            <!--/.input-->
+                        <!--/.col-md-2-->
+                        
+                        .col-md-2.col-lg-1.padding-left
+                            label.text-uppercase
+                                |Adult
+                            .input.box-radius
+                                i.fa.fa-caret-down
+                                select(name="adult")
+                                    option(value="1")
+                                        |1
+                                    option(value="2")
+                                        |2
+                                    option(value="3")
+                                        |3
+                            <!--/.input-->
+                        <!--/.col-md-2-->
+                            
+                        .col-md-2.col-lg-2.padding-left
+                            label.text-uppercase
+                                |children
+                            .input.box-radius
+                                i.fa.fa-caret-down
+                                select(name="childrens")
+                                    option(value="1")
+                                        |1
+                                    option(value="2")
+                                        |2
+                                    option(value="3")
+                                        |3
+                            <!--/.input-->
+                        <!--/.col-md-2-->
+                        .col-md-3.padding-left.button-booking
+                            a.btn.btn-default(href="#")
+                                | Check Availability
+                    <!--/.row-->
+                <!--/.online-book-form-->
+            <!--/.col-md-12-->
+        <!--/.row-->
+    <!--/.container-fluid-->
+<!--/.online-book-section-->

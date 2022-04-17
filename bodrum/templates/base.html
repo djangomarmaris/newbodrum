@@ -1,0 +1,66 @@
+<!doctype html>
+{% load static i18n %}
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% block css%}
+    {% endblock%}
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon_72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon_114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon_144x144.png">
+    <!--================= Custom Font =====================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7cPlayfair+Display:400,700,900" rel="stylesheet">
+    <!--====== Custom CSS for themes and color schemer =======-->
+    <link href="{% static 'css/plugins.css' %}" rel="stylesheet">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <link href="{% static 'colors/color-schemer.css' %}" rel="stylesheet">
+    <!--================= Modernize =======================-->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    {% block seo %}
+
+    {% endblock %}
+</head>
+
+<body>
+
+
+
+
+
+
+{% include "navbar.html" %}
+{% for message in messages %}
+<div class="alert alert-primary" role="alert">
+    {{message}}
+</div>
+{% endfor %}
+{% block content %}
+
+
+
+{% endblock %}
+{% include "footer.html" %}
+
+
+
+
+
+
+
+{% block jss %}
+
+{% endblock %}
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script><!--Jquery-->
+    <script src="{% static 'js/vendor/jQuery-Migrate.min.js' %}"></script><!--jQuery-Migrate-->
+    <script src="{% static 'js/plugins.js' %}"></script><!--plugins js-->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyA3SxFkcHa9sTHRJHoAD7TlU23URYL6vfs&amp;#038;ver=4.7.2">      </script>
+    <script src="{% static 'js/livekitchen.js' %}"></script><!--live-kitchen-app-->
+
+</body>
+</html>

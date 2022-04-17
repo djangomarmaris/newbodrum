@@ -1,0 +1,12 @@
+extends jade-parts/docwrapper
+
+append pagetitle
+    |blog single
+    
+append sitewellcome
+    //- Included Page heading Content
+    include jade-parts/page-heading-content.jade
+    
+append sitecontent
+    //- Included Blog Page Content
+    include jade-parts/single-blog-content.jade

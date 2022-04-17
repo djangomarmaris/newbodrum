@@ -1,0 +1,15 @@
+extends jade-parts/docwrapper
+
+append pagetitle
+    | Shop Single Page
+
+append pagename
+    | Shop Single Page
+    
+append sitewellcome
+    //- Included Page heading And Page Nav
+    include jade-parts/page-heading-content.jade
+    
+append sitecontent
+    //- Included Room List Content
+    include jade-parts/shop-single-content.jade

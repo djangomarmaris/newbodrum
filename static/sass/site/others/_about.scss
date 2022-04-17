@@ -1,0 +1,63 @@
+.best-place-area {
+    padding-bottom: 55px;
+    .section-align-title-area {
+        .section-align-title {
+            padding-right: 70px;
+        }
+        > p {
+            font-size: 15px;
+            line-height: 1.8em;
+        }
+    }
+}
+
+.about-us-area {
+    padding: 85px 0 50px;
+}
+.single-achievement {
+    margin-bottom: 65px;
+    &.achievement-right {
+        text-align: right;
+        > h4 > span {
+            float: right;
+        }
+    }
+    .achievement-title {
+        color: #3d4348;
+        font-size: 72px;
+        font-weight: bold;
+        margin: 0 0 40px;
+        
+    }
+    p {
+        color: $color__lebel-text;
+        font-size: 15px;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 15px;
+        }
+        > i {
+            color: #343434;
+            font-family: $font__heading;
+            font-weight: bold;
+        }
+    }
+    li {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        > h4 {
+            font-family: $font__body;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0 0 20px;
+            span {
+                float: right;
+                font-size: 36px;
+                margin-left: 5px;
+                margin-top: -5px;
+            }
+        }
+    }
+}

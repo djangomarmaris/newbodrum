@@ -1,0 +1,95 @@
+{% load static i18n %}
+<header id="masthead" class="site-header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 hidden-xs">
+              <div class="addresses">
+                <div class="phone"><i class="fa fa-phone"></i>
+                  <p>Telefon - <span>01623 030020</span></p>
+                </div>
+                <div class="email"><i class="fa fa-envelope"></i>
+                  <p>mail@livekitchen.com</p>
+                </div>
+              </div><!--/.addresses-->
+            </div><!--/.col-md-8-->
+            <div class="col-md-4">
+              <div class="social-links"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div><!--/.social-links-->
+              <div class="search-area hidden-xs"><i class="fa fa-search"></i>
+                <div class="header-search">
+                  <div class="search default">
+                    <form action="#" method="get" class="searchform">
+                      <div class="input-group">
+                        <input type="search" name="s" placeholder="Search here..." class="form-controller"><span class="input-group-btn">
+                          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-search-area hidden-sm hidden-md hidden-lg">
+                <!--i.fa.fa-search-->
+                <div class="header-search">
+                  <div class="search default">
+                    <form action="#" method="get" class="searchform">
+                      <div class="input-group">
+                        <input type="search" name="s" placeholder="Search here..." class="form-controller"><span class="input-group-btn">
+                          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div><!--/.search-area-->
+            </div><!--/.col-md-4-->
+          </div><!--/.row-->
+        </div><!--/.container-->
+      </div><!--/.header-top-->
+      <!--Header Bottom-->
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="menu-wrapper clearfix">
+                <div class="navbar-header pull-left">
+                  <div class="logo-block" style="margin: -20px 2px -20px; text-align: center;"><a href="index.html" class="site-logo"><img width="100" src="{% static 'logolast.png' %}" alt="sitelogo" class="logo"></a><!--/.site-logo--></div>
+                </div><!--/.navbar-header-->
+                <div class="collapse navbar-collapse pull-right">
+                  <div class="navigation hidden-sm hidden-xs">
+                    <ul class="nav navbar-nav mainmenu">
+                      <li><a href="/">Ana Sayfa</a>
+                      </li>
+                      <li><a href="/bodrum-mutfak/about/">Hakkımızda</a>
+                      </li>
+                      <li><a href="/bodrum-mutfak/our-parthners/">Bayiliklerimiz</a>
+                      </li>
+                      <li><a href="/bodrum-mutfak/gallery/" target="_blank">Galeri</a>
+
+                      </li>
+                      <li><a href="gallery.html">Gallery</a></li>
+                      <li><a href="#">İletişim</a>
+                      </li>
+                      <li><a href="#">Events</a>
+                        <ul class="sub-menu">
+                          <li><a href="event-list.html">Event List                               </a></li>
+                          <li><a href="events.html">Event Timeline</a></li>
+                        </ul>
+                      </li>
+                    </ul><!--/.mainmenu-->
+                  </div><!--/.navigation-->
+                  <!--Mobile Main Menu-->
+                  <div class="mobile-menu-main hidden-md hidden-lg">
+                    <div class="menucontent overlaybg"> </div>
+                    <div class="menuexpandermain slideRight"><a id="navtoggole-main" class="animated-arrow slideLeft menuclose"><span></span></a><span id="menu-marker"></span></div><!--/.menuexpandermain-->
+                    <div id="mobile-main-nav" class="main-navigation slideLeft">
+                      <div class="menu-wrapper">
+                        <div id="main-mobile-container" class="menu-content clearfix"></div>
+                      </div>
+                    </div><!--/#mobile-main-nav-->
+                  </div><!--/.mobile-menu-main-->
+                </div><!--/.navbar-collapse-->
+              </div><!--/.menu-wrapper-->
+            </div><!--/.col-md-12-->
+          </div><!--/.row-->
+        </div><!--/.container-->
+      </div><!--/.header-bottom-->
+    </header><!--/.site-header-->

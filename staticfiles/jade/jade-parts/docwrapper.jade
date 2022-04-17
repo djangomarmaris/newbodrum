@@ -1,0 +1,382 @@
+block config
+    include config.jade
+doctype
+html(lang="en")
+    head
+        //================= Basic Page Needs ================
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        
+        //================= Specific Meta ===================
+        meta(name="description" content="Softhopper is a modern theme marketplace template.")
+        meta(name="keywords" content="HTML5, Template, Design, Development, Hotel, theme")
+        
+        //================= Page Title ======================
+        title
+            block title
+                | #{PageTitle}
+        
+        //================= Favicons ========================
+        link(rel="shortcut icon" href="images/favicon.ico")
+        link(rel="apple-touch-icon" href="images/apple-touch-icon.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon_72x72.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon_114x114.png")
+        link(rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon_144x144.png")
+        //================= Custom Font =====================
+        link( href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7cPlayfair+Display:400,700,900" rel="stylesheet")
+              
+        //====== Custom CSS for themes and color schemer =======
+        link(href="css/plugins.css" rel="stylesheet")
+        link(href="style.css" rel="stylesheet")
+        link(href="colors/color-schemer.css" rel="stylesheet")
+        
+        
+        //================= Modernize =======================
+        script(src="js/vendor/modernizr-2.8.3.min.js")
+    
+    body(Class=BodyBgColor)
+        //================= Header ==========================
+        header#masthead.site-header
+            .header-top
+                .container
+                    .row
+                        .col-md-8.hidden-xs
+                            .addresses
+                                .block-time
+                                    i.fa.fa-clock-o
+                                    p
+                                        | Book Time - 
+                                        span
+                                            | 10am to 11pm
+                                .phone
+                                    i.fa.fa-phone
+                                    p
+                                        | Call Us - 
+                                        span
+                                            |01623 030020
+                                .email
+                                    i.fa.fa-envelope
+                                    p
+                                        |mail@livekitchen.com
+                            <!--/.addresses-->
+                        <!--/.col-md-8-->
+                        .col-md-4
+                            .social-links
+                                a(href="#")
+                                    i.fa.fa-instagram
+                                a(href="#")
+                                    i.fa.fa-google-plus
+                                a(href="#")
+                                    i.fa.fa-facebook
+                                a(href="#")
+                                    i.fa.fa-twitter
+                            <!--/.social-links-->
+                            .search-area.hidden-xs
+                                i.fa.fa-search
+                                .header-search
+                                    .search.default
+                                      form(action="#" method="get" class="searchform")
+                                        .input-group
+                                            input(type="search" name="s" placeholder="Search here...").form-controller
+                                            span.input-group-btn
+                                                button(type="submit").btn.btn-default
+                                                    i.fa.fa-search
+                            .mobile-search-area.hidden-sm.hidden-md.hidden-lg
+                                //i.fa.fa-search
+                                .header-search
+                                    .search.default
+                                      form(action="#" method="get" class="searchform")
+                                        .input-group
+                                            input(type="search" name="s" placeholder="Search here...").form-controller
+                                            span.input-group-btn
+                                                button(type="submit").btn.btn-default
+                                                    i.fa.fa-search
+                            <!--/.search-area-->
+                        <!--/.col-md-4-->
+                    <!--/.row-->
+                <!--/.container-->
+            <!--/.header-top-->
+            
+            //Header Bottom
+            .header-bottom
+                .container
+                    .row
+                        .col-md-12
+                            .menu-wrapper.clearfix
+                                .navbar-header.pull-left
+                                    .logo-block
+                                        a(class="site-logo" href="index.html")
+                                            img.logo(src="images/logo.png" alt="sitelogo")
+                                        <!--/.site-logo-->
+                                <!--/.navbar-header-->
+                                .collapse.navbar-collapse.pull-right
+                                    //-Main Nav
+                                    .navigation.hidden-sm.hidden-xs
+                                        ul.nav.navbar-nav.mainmenu
+                                            li
+                                                a(href="#") Home
+                                                ul.sub-menu
+                                                    li
+                                                        a(href="index.html") Home One
+                                                    li
+                                                        a(href="index02.html") Home Two
+                                                    li
+                                                        a(href="index03.html") Home three
+                                            li
+                                                a(href="#") Shops
+                                                ul.sub-menu
+                                                    li
+                                                        a(href="shop.html") Shop
+                                                    li
+                                                        a(href="shop-single-page.html") Shop Single
+                                            li
+                                                a(href="#") Pages
+                                                ul.sub-menu
+                                                    li
+                                                        a(href="about-us.html") About Page
+                                                    li
+                                                        a(href="contact-us.html") Contact Page
+                                                    li
+                                                        a(href="review-page.html") Review Page
+                                                    li
+                                                        a(href="review-page-withmasonary.html") Review Masonry Page         
+                                                    li
+                                                        a(href="coming-soon.html") Coming Soon Page            
+                                                    li
+                                                        a(href="404.html") 404 Page
+                                            li
+                                                a(href="#") Dining
+                                                ul.sub-menu
+                                                    li
+                                                        a(href="dining-menu.html") Dining Menu One                               
+                                                    li
+                                                        a(href="dining-menu-two.html") Dining Menu Two
+                                                    li
+                                                        a(href="dining-menu-three.html") Dining Menu Three
+                                            li
+                                                a(href="gallery.html") Gallery
+                                            li
+                                                a(href="#") Blog
+                                                ul.sub-menu
+                                                    li
+                                                        a(href="blog-page.html") Blog                               
+                                                    li
+                                                        a(href="single-post.html") Blog Single
+                                            li
+                                                a(href="#") Events
+                                                ul.sub-menu
+                                                    li
+                                                        a(href="event-list.html") Event List                               
+                                                    li
+                                                        a(href="events.html") Event Timeline
+                                        <!--/.mainmenu-->
+                                    <!--/.navigation-->
+
+                                    //Mobile Main Menu
+                                    .mobile-menu-main.hidden-md.hidden-lg
+                                        .menucontent.overlaybg  
+                                        .menuexpandermain.slideRight
+                                            a#navtoggole-main.animated-arrow.slideLeft.menuclose
+                                                span
+                                            span#menu-marker
+                                        <!--/.menuexpandermain-->
+                                        #mobile-main-nav.main-navigation.slideLeft
+                                            .menu-wrapper
+                                                #main-mobile-container.menu-content.clearfix
+                                        <!--/#mobile-main-nav-->
+                                    <!--/.mobile-menu-main-->
+                                <!--/.navbar-collapse-->
+                            <!--/.menu-wrapper-->
+                        <!--/.col-md-12-->
+                    <!--/.row-->
+                <!--/.container-->
+            <!--/.header-bottom-->
+        <!--/.site-header-->
+        
+        //================= Page Wellcome Area ===================
+        block sitewellcome
+        
+        //================= Content Area ===================
+        block sitecontent
+        
+        //================= Site Footer ===================
+        #footer-top-section(style="background-image:url('images/footer-pattern.jpg')")
+            .container
+                .row
+                    .col-md-12
+                        .section-title-area.text-center
+                            h2.section-title
+                                |We Are Available<br>For You 24/7
+                            p.section-title-dec
+                                |Our online support service is always 24 Hours
+                        <!--/.section-title-area-->
+                    <!--/.col-md-12-->
+                <!--/.row-->
+                .row
+                    .col-sm-6.col-md-3
+                        .widget-area.footer-sidebar-top-1
+                            aside.widget.clearfix.widget_address
+                                .widget-title-area
+                                    h4.widget-title
+                                        |address
+                                <!--/.widget-title-area-->
+                                .widget-content
+                                    p
+                                        |112/B - Road Number 08/A Dhanmondi, Dhaka, Bangladesh
+                            <!--/.widget_address-->
+                        <!--/.footer-sidebar-top-1-->
+                    <!--/.col-md-3-->
+                    
+                    .col-sm-6.col-md-3
+                        .widget-area.footer-sidebar-top-2
+                            aside.widget.clearfix.widget_call_us
+                                .widget-title-area
+                                    h4.widget-title
+                                        |call
+                                <!--/.widget-title-area-->
+                                .widget-content
+                                    p
+                                        |+88 0215469875
+                                    p
+                                        |666 35874692050
+                            <!--/.widget_call_us-->
+                        <!--/.footer-sidebar-top-2-->
+                    <!--/.col-md-3-->
+
+                    .col-sm-6.col-md-3
+                        .widget-area.footer-sidebar-top-3
+                            aside.widget.clearfix.widget_mail_us
+                                .widget-title-area
+                                    h4.widget-title
+                                        |mail
+                                <!--/.widget-title-area-->
+                                .widget-content
+                                    p
+                                        | yourmail@gmail.com
+                                    p
+                                        |Hotelrmail@gmail.com
+                            <!--/.widget_mail_us-->
+                        <!--/.footer-sidebar-top-3-->
+                    <!--/.col-md-3-->
+
+                    .col-sm-6.col-md-3
+                        .widget-area.footer-sidebar-top-4
+                            aside.widget.clearfix.widget_social_media
+                                .widget-title-area
+                                    h4.widget-title
+                                        |social Account
+                                <!--/.widget-title-area-->
+                                .widget-social
+                                    a(href="#")
+                                        i.fa.fa-facebook
+                                    a(href="#")
+                                        i.fa.fa-twitter
+                                    a(href="#")
+                                        i.fa.fa-google-plus
+                                    a(href="#")
+                                        i.fa.fa-instagram
+                                <!--/.widget-social-->
+                            <!--/.widget_social_media-->
+                        <!--/.footer-sidebar-top-4-->
+                    <!--/.col-md-3-->
+                <!--/.row-->
+            <!--/.container-fluid-->
+        <!--/#footer-top-section-->
+
+        footer#colophon.site-footer(style="background-image: url(images/footer-bottom-bg.jpg);")
+            // Footer Bottom Section
+            #footer-bottom-section
+                .container
+                    .row
+                        .col-sm-6.col-md-4
+                            .widget-area.footer-sidebar-1
+                                aside.widget.clearfix.widget_about-us
+                                    .widget-title-area
+                                        h4.widget-title
+                                            |About LiveKitchen
+                                    <!--/.widget-title-area-->
+                                    .widget-content
+                                        p
+                                            |We Provide Premium Word Press, Ghost and HTML template. Our Premium Templates, Themes are developed in a way so that the clients find their in life easier and get solved instantly by Support. Themes are developed in a way so that the clients find.
+                                        a.btn.btn-default(href="#")
+                                            |more
+                                <!--/.widget-about-us-->
+                            <!--/.footer-sidebar-1-->
+                        <!--/.col-md-4-->
+                        .col-sm-6.col-md-4
+                            .widget-area.footer-sidebar-2
+                                aside.widget.clearfix.widget_opening_hour
+                                    .widget-title-area
+                                        h4.widget-title
+                                            | Opening Hour
+                                    <!--/.widget-title-area-->
+                                    .widget-opening-hour
+                                        ul
+                                            li Monday <span class="pull-right">8.00am - 12.00pm</span>
+                                            li Tuesday <span class="pull-right">8.00am - 12.00pm</span>
+                                            li Wednesday <span class="pull-right">8.00am - 12.00pm</span>
+                                            li Thursday <span class="pull-right">8.00am - 12.00pm</span>
+                                            li Friday <span class="pull-right">8.00am - 12.00pm</span>
+                                            li Saturday <span class="pull-right">8.00am - 12.00pm</span>
+                                            li.offday Sunday <span class="pull-right">Closed</span>
+                                    <!--/.widget-content-->
+                                <!--/.widget-categories-->
+                            <!--/.footer-sidebar-2-->
+                        <!--/.col-md-4-->
+                        
+                        .col-sm-6.col-md-4
+                            .widget-area.footer-sidebar-3
+                                aside.widget.clearfix.widget_newsletter
+                                    .widget-title-area
+                                        h4.widget-title
+                                            |newsletter
+                                    <!--/.widget-title-area-->
+                                    .newsletter-area.text-center
+                                        p
+                                            | Join our malling list to receive news and announcements
+                                        form(action="http://softhopper.us11.list-manage.com/subscribe/post?u=559ff170eee6949a359c40740&amp;id=fbbd18e68b" method="post" name="form-newsletter" id="form-newsletter")
+                                            input(value="" placeholder="" aria-required="true" class="form-controller" id="email_1" name="EMAIL" type="email")
+                                            button(class="mail-chip-button" id="mc-embedded-subscribe" value="Subscribe" type="submit")
+                                                | Subscribe
+                                        <!--/.form-newsletter-->
+                                    <!--/.newsletter-area-->
+                                <!--/.widget_newsletter-->
+                            <!--/.footer-sidebar-3-->
+                        <!--/.col-md-4-->
+                    <!--/.row-->
+                    .row
+                        .col-md-12
+                            .payment-method.text-center 
+                                a(href="#")
+                                    img(src="images/card/card-1.png" alt="card")
+                                a(href="#")
+                                    img(src="images/card/card-2.png" alt="card")
+                                a(href="#")
+                                    img(src="images/card/card-3.png" alt="card")
+                                a(href="#")
+                                    img(src="images/card/card-4.png" alt="card")
+                            <!--/.payment-method-->
+                        <!--/.copyright-->
+                        .col-md-12
+                            .copyright.text-center                            
+                                p
+                                    |Copyright  2017 SoftHopper  -  All Right Reserved <a href="index.01.html">SoftHopper.net</a>
+                            <!--/.copyright-->
+                        <!--/.copyright-->
+                    <!--/.row-->
+                <!--/.container-->
+            <!--/#footer-bottom-section-->
+        <!--/.site-footer-->
+        
+        //********************* JS FILE DECLARATION *****************************  
+        block another_script
+            script(src="js/vendor/jquery-1.12.4.min.js")
+            <!--Jquery-->
+            script(src="js/vendor/jQuery-Migrate.min.js")
+            <!--jQuery-Migrate-->
+            script(src="js/plugins.js")
+            <!--plugins js-->
+            script(type='text/javascript' src='http://maps.google.com/maps/api/js?key=AIzaSyA3SxFkcHa9sTHRJHoAD7TlU23URYL6vfs&#038;ver=4.7.2')       
+        script(src="js/livekitchen.js")
+        <!--live-kitchen-app-->

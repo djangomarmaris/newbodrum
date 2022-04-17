@@ -1,0 +1,146 @@
+/*
+Template Name: LiveKitchen
+Template URI: http://livekitchen-html.htmlguru.net/
+Author: htmlguru
+Author URI: http://softhopper.net
+Description: It\' s a Restaurant Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html.
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Elements
+	## Post, Page, Comments Table
+# Forms
+# Navigation
+	## Links
+	## Menus
+	## Pagination
+	## Navigation responsive
+		### Mobile CSS
+		### Pagination responsive
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+#layouts
+	## Header Content
+		### Pre-Loader
+		### Site Header
+			### Header Top
+			### Header Bottom
+	## Welcome Content
+	## Main Content
+		### Head chef and Booking
+		### Menu Item area
+		### About And Special Menu
+		### Our Delicious Menu
+		### Our gallery Section
+		### Gallery Item
+		### Our Gallery Section
+		### Our Experts chefs Section
+		### Special Food Time
+		### Our features Section
+		### Menu title Section
+		### Food Shop and Event Section
+		### Review Single
+		### Related Shop
+		### Service Section
+		### Our Customer Area
+		### Blog Post area
+		### Fun facts Content
+		### Gallery Content
+		### Event Content
+		### Dining Menu Item
+		### Coming Soon Page
+		### Extra Style
+	## Widget-content
+		### widget-social
+		### About Us widget
+		### Email Subscribe Widget
+		### Popular, Latest Post, Recent Comment widget
+		### text widget
+		### Categories And Archive Widget
+		### TagCloud Widget
+		### Follow Us Widget
+		### Search Widget
+		### Search Widget
+		### Calender Widget
+		### Links, Meta, NavMenu, Pages, 
+			Recent Comment, Recent Entries  Widget
+		### RSS Widget
+		### Text Widget
+		### Custom nav for layout Eight
+		### Extra widget
+	## Footer Content
+		### Scroll Top
+# Site Content
+    ## Posts and pages
+    	### Post Meta
+	## Comments
+	## About Page
+	## Contact Page
+	## 404 Page
+	## Site Responsive
+		### About US Page
+# Media
+	## Captions
+	## Galleries
+		### WordPress Default Gallery
+		### Gallery pop Up
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Site Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";

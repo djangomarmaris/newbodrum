@@ -1,0 +1,104 @@
+section.online-book-section
+    .container
+        .row
+            .col-md-8.col-md-offset-2
+                .section-title-area.section-title-one.text-center
+                    .title-box
+                        .title-box-inner.tb
+                            .tb-cell
+                                h3.section-name
+                                    |Search
+                                    span
+                                        |Room
+                                i.fa.fa-angle-down
+                    <!--/.site-header-->
+                    h2.section-title
+                        span
+                            |For rates &amp;
+                        span
+                            |Availability
+                    <!--/.section-title-->
+                    p.section-title-dec.wow.fadeInUp(data-wow-duration="1s" data-wow-delay="0.10s")
+                        |Simply fill required fields and then click on check availability button then you’ll redirect to available rooms and suites to book online.
+                <!--/.section-title-area-->
+            <!--/.col-md-12-->
+        <!--/.row-->
+        .row
+            .col-md-12
+                form.online-book-form(action="#")
+                    .row
+                        .col-md-3.padding-left
+                            label.text-uppercase
+                                |Arrival Date
+                            .input.box-radius
+                                i.fa.fa-calendar
+                                input.calendar.form-controller(type="text" id="date-arrival" placeholder="Arrival Date")
+                            <!--/.input-->
+                        <!--/.col-md-3-->
+                        
+                        .col-md-3.padding-left
+                            label.text-uppercase
+                                |Departure Date
+                            .input.box-radius
+                                i.fa.fa-calendar
+                                input.calendar.form-controller(type="text" id="date-departure" placeholder="Departure Date")
+                            <!--/.input-->
+                        <!--/.col-md-3-->
+                        
+                        .col-md-2.padding-left
+                            label.text-uppercase
+                                |room
+                            .input.box-radius
+                                i.fa.fa-caret-down
+                                select(name="room")
+                                    option(value="1")
+                                        |1
+                                    option(value="2")
+                                        |2
+                                    option(value="3")
+                                        |3
+                            <!--/.input-->
+                        <!--/.col-md-2-->
+                        
+                        .col-md-2.padding-left
+                            label.text-uppercase
+                                |Adult
+                            .input.box-radius
+                                i.fa.fa-caret-down
+                                select(name="adult")
+                                    option(value="1")
+                                        |1
+                                    option(value="2")
+                                        |2
+                                    option(value="3")
+                                        |3
+                            <!--/.input-->
+                        <!--/.col-md-2-->
+                            
+                        .col-md-2.padding-left
+                            label.text-uppercase
+                                |children
+                            .input.box-radius
+                                i.fa.fa-caret-down
+                                select(name="childrens")
+                                    option(value="1")
+                                        |1
+                                    option(value="2")
+                                        |2
+                                    option(value="3")
+                                        |3
+                            <!--/.input-->
+                        <!--/.col-md-2-->
+                    <!--/.row-->  
+                    .row
+                        .col-md-12.text-center
+                            a.btn.btn-default(href="#")
+                                |Check Availability
+                            <!--/.btn-->
+                        <!--/.col-md-12-->
+                    <!--/.row-->
+                <!--/.online-book-form-->
+            <!--/.col-md-12-->
+        <!--/.row-->
+    <!--/.container-->
+<!--/.online-book-section-->

@@ -1,0 +1,111 @@
+.contact-us-area {
+    .page-sub-heading {
+        margin: 10px 0 -5px;
+    }
+}
+.contact-us-content .section-align-title-area {
+    margin-bottom: 55px;
+    .section-align-title {
+        text-transform: capitalize;
+        font-size: 75px;
+        @media only screen and (max-width: 767px) {
+            font-size: 45px;
+        }
+    }
+}
+.single-contact-info {
+    margin-bottom: 35px;
+    > .title {
+        color: #3d4348;
+        font-family: $font__body;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;        
+    }
+    .content > p {
+        color: #898989;
+        font-weight: 500;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+#contact-form-wrap {
+    background-color: $color__gray_soft;
+    border: 1px solid #E3E3E3;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    padding: 50px;
+    @media only screen and (max-width: 767px) {
+        padding: 30px;
+    }
+    .sand-message-title-area {
+        position: relative;
+        > img {
+            left: 50%;
+            margin-left: -35px;
+            position: absolute;
+            top: -85px;
+            @media only screen and (max-width: 767px) {
+                top: -65px;
+            }
+        }
+        .sand-message-heading {
+            margin: 10px 0 55px;
+            color: #3d3d3d;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-family: $font__body;
+        }
+    }
+    .btn.btn-submit {
+        padding: 12px 50px;
+        width: auto !important;
+        background-color: $color__heading-two;
+        margin: 25px 0 -5px;
+        border-radius: 15px;
+        line-height: normal;
+    }
+    span.wpcf7-not-valid-tip {
+        color: #df2626;
+        display: block;
+        font-size: 0.8em;
+        margin-bottom: -10px;
+        margin-left: 4px;
+        margin-top: 3px;
+    }
+    div.wpcf7-validation-errors {
+        border: 1px solid #efdf35;
+        color: #df2626;
+    }
+    div.wpcf7-mail-sent-ng {
+        border: 1px solid #df2626;
+    } 
+    div.wpcf7-response-output {
+        padding: 0.4em 1em;
+        margin: 0;
+    }
+    .wpcf7-mail-sent-ok {
+        border-width: 1px;
+    }
+}
+.contact-google-map-area {
+    padding: 30px 0 75px;
+    .section-title-area.section-title-area-four .section-title-dec {
+        margin-bottom: 0;
+    }
+}
+#gmaps {
+    height: 590px;
+    background: #E5E3DF;
+    @media only screen and (max-width: 991px) { 
+        height: 450px;
+    }
+    @media only screen and (max-width: 600px) { 
+        height: 400px;
+    }
+    @media only screen and (max-width: 400px) { 
+        height: 330px;
+    }
+}

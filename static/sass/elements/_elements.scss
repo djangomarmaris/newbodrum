@@ -1,0 +1,270 @@
+body {
+	background: $color__white; /* Fallback for when there is no custom background color defined. */
+	word-wrap: break-word;
+	overflow-x: hidden;
+}
+
+q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+blockquote {
+	border: 0;
+	padding: 0;
+	font-style: italic;
+	font-size: 18px;
+	position: relative;
+    border-left: 4px solid #c2c2c2;
+    font-weight: bold;
+    color: #737373;
+    padding: 0 0 0 25px;
+	p {
+		margin-bottom: 10px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		cite {
+			margin-left: 0;
+			padding-left: 0;
+			a {
+				padding-left: 0;
+			}
+		}
+	}
+	footer {
+		position: relative;
+	}
+	cite, a, span {
+	    padding: 0 1.2em;
+		font-size: 0.8em;
+		font-weight: 500;
+		font-style: normal;
+		position: relative;
+		text-indent: 0;
+	}
+	cite {
+		display: block;
+	}
+	cite::before {
+	    content: "";
+	    padding-right: 5px;
+	}
+}
+blockquote .small::before,
+blockquote footer::before,
+blockquote small::before {
+	margin-left: 18px;
+} 
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";
+
+.full-width-content {
+	float: none;
+	margin: auto;
+}
+.bg-white-smoke {
+	background-color: $color__white-smoke;
+}
+.color-ash {
+	color: $color__border-one !important;
+}
+.color-dark-gray {
+	color: #afafaf !important;
+}
+.color-black {
+	color: $color__black !important;
+}
+.color-white {
+	color: $color__white !important;
+}
+.jarallax {
+	position: relative;
+}
+.italic-style {
+	font-style: italic;
+}
+.padding-reset-section {
+	margin: 0;
+	padding: 0 15px;
+	@media only screen and (max-width: 480px) {
+		padding: 0;
+	}
+}
+.padding-reset {
+	padding: 0 5px;
+}
+.bg-image {
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.box-radius {
+    border-radius: 7px;
+}
+.padding-right {
+	@media only screen and (min-width: 992px) {
+    	padding-right: 0;
+	}
+}
+.padding-left {
+    padding-left: 0;
+}
+.margin-less {
+	margin-top: -30px;
+}
+.section-align-title-area {
+	margin-bottom: 30px;
+}
+.overlay-bg {
+	position: relative;
+	&:before {
+		position: absolute;
+		background-color: rgba(0,0,0,0.65);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		content: "";
+	}
+}
+.container-large-screen {
+	@media only screen and (min-width: 1581px) {
+		max-width: 1485px;
+		margin: auto;
+	}
+	@media only screen and (min-width: 1400px) and (max-width: 1580px) {
+		max-width: 1350px;
+		margin: auto;
+	}
+	@media only screen and (min-width: 1250px) and (max-width: 1399px) {
+		max-width: 1230px;
+		margin: auto;
+	}
+	@media only screen and (max-width: 1249px) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.mobile-full {
+	@media only screen and (max-width: 530px) {
+		width: 100%;
+	}
+}
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+.modal:before {
+	@media only screen and (min-width:992px) {	
+	  	content: '';
+	  	display: inline-block;
+	  	height: 100%;
+	  	vertical-align: middle;
+	  	margin-right: -4px; /* Adjusts for spacing */
+	}
+}
+.modal-dialog {
+	@media only screen and (min-width:992px)  {
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+	}
+}
+.pignose-calendar-top-year {
+    font-family: inherit;
+}
+.margin-top {
+    margin-top: 30px;
+}
+.pd-left {
+    padding-left: 0;
+}
+.bg-pattern {
+	background-repeat: repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.zero-pd-top {
+	padding-top: 0 !important;
+}
+.zero-mr-top {
+	margin-top: 0 !important;
+}
+
+.mobile-extend {
+    @media only screen and (max-width: 992px) {
+        max-height: 600px;
+        overflow: hidden;
+    }
+
+}
+.extend-icon {
+    font-size: 35px;
+    padding: 0;
+    display: block;
+    cursor: pointer; 
+    &.up .fa:before {
+        content: "\f106";
+    }
+}
+.extend-btn {
+    text-align: center;
+    position: relative;
+    margin-top: -95px;
+    padding-top: 60px;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.7) 20%, rgba(255,255,255,0.9) 40%, rgba(255,255,255,1) 97%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(20%,rgba(255,255,255,0.7)), color-stop(40%,rgba(255,255,255,0.7)), color-stop(40%,rgba(255,255,255,0.9)), color-stop(100%,rgba(255,255,255,1))); 
+    background: -webkit-linear-gradient(top,  rgba(255, 255, 255, 0.012) 0, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 40%, white 100%); 
+    background: -o-linear-gradient(top,  rgba(255, 255, 255, 0.012) 0, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 40%, white 100%);
+    background: -ms-linear-gradient(top,  rgba(255, 255, 255, 0.012) 0, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 40%, white 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.012) 0, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.9) 40%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.panel {
+	border-radius: 0 !important;
+	.panel-heading {
+		padding: 0;
+		border-radius: 0 !important;
+	}
+	.panel-title {
+		font-family: inherit;
+		font-weight: bold;
+		a {
+			padding: 12px 15px;
+			display: block;
+			position: relative;
+			&:hover {
+				border-bottom: 0 none;
+			}
+			&:after {
+			    content: "\f107";
+			    font-family: FontAwesome;
+			    position: absolute;
+			    right: 20px;
+			    top: 12px;
+			}
+		}
+	}
+	.menu-item-one:first-child {
+		padding-top: 0;
+		margin-top: 0;
+	}
+}

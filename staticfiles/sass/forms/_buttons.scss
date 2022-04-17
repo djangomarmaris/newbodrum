@@ -1,0 +1,168 @@
+button:focus,
+.btn:focus {
+    outline: none;
+}
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn:active:focus, 
+.btn:focus {
+    outline: none;
+    color: $color__white;
+}
+
+.btn {
+    border-radius: 0px;
+    border-radius: 30px;
+    color: $color__white;
+    font-size: 20px;
+    font-weight: 600;    
+    padding: 13px 45px;
+    line-height: normal;
+}
+.btn:active {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.125) inset;
+}
+.btn-default {
+    border: 0 none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: $color__theme-secondary;
+    position: relative;
+    z-index: 5;
+    @include prefixed(transition, 0.25s ease-in);
+    &:hover, &:focus {
+        color: $color__white !important;
+    }
+}
+button[type="submit"] {
+    @include prefixed(transition, all 0.25s ease-in-out);
+}
+button[type="submit"]:hover,
+.btn-submit:hover {
+    color: $color__white !important;
+}
+.form-submit {
+   button[type="submit"] {
+        background-color: #333333;
+   } 
+}
+.btn-offer {
+    border: 2px solid;
+    margin-right: 20px;
+    letter-spacing: 0.010em;
+    font-size: 22px;
+    padding: 10px 45px;
+    @include prefixed(transition, all 0.25s ease-in-out);
+    &.active {
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+        > span {
+            color: $color__white;
+        }
+    }
+    &:hover, &:focus {
+        color: $color__white !important;
+        > span {
+            color: $color__white;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+        padding: 13px 20px;
+        line-height: 1;
+        clear: both;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+}
+.btn-more {
+    padding-left: 15px;
+    padding-right: 15px;
+    span {
+        padding: 0 70px;
+        position: relative;
+        &:before {
+            background-color: $color__white;
+            content: "";
+            height: 40px;
+            left: 50%;
+            position: absolute;
+            top: -10px;
+            width: 1px;
+            z-index: 0;
+        }
+    }
+    > i.fa {
+        font-size: 18px;
+    }
+}
+.btn-details:hover {
+    color: $color__white !important;
+}
+
+.hospitality-more {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: table;
+    margin: 60px auto 0;
+    cursor: inherit;
+    span.text {
+        padding: 0 45px;
+        position: relative;
+        &:before {
+            background-color: $color__white;
+            content: "";
+            height: 40px;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            width: 1px;
+            z-index: 0;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            opacity: 0.65;
+            margin-left: 3px;
+        }
+    }
+    > i.fa {
+        font-size: 18px;
+    }
+    &:hover {
+        color: $color__white !important;
+    }
+    .next, .prev {
+        cursor: pointer;
+        padding: 2px 15px;
+    }
+}
+
+.btn-details {
+    background-color: $color__theme-main;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 25px;
+    text-transform: capitalize;
+}
+.btn-submit {
+    font-size: 14px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 45px;
+}
+#login-modal .btn-submit, 
+#registrar-modal .btn-submit, 
+#booking-modal .btn-submit {
+    line-height: normal;
+}
+.form-submit #submit {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px 30px;
+}

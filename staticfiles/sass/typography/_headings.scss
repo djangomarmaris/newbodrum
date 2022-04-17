@@ -1,0 +1,352 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	line-height: $font__line-height-heading;
+	color: $color__heading;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+    font-family: $font__heading;
+}
+
+h1, h2, h3, h4 {
+  	font-weight: inherit;
+}
+
+h1 {
+  	font-size: $heading__one;
+  	margin: 0 0 em(30px);
+}
+
+h2 {
+	font-size: $heading__two;
+}
+
+h3 {
+	font-size: $heading__three;
+}
+
+h4 {
+	font-size: $heading__four;
+}
+
+h5 {
+	font-size: $heading__five;
+}
+
+h6 {
+	font-size: $heading__six;
+}
+
+small {
+	font-size: $heading__six;
+} 
+
+.font_small {
+	@extend small;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    color: inherit;
+    text-decoration: none
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted $color__black;
+}
+
+.page-heading-area {
+    padding: 60px 0 60px;
+    position: relative;
+    .page-heading {
+        color: $color__white;
+        font-size: 32px;
+        font-weight: 900;
+        margin: 0;
+        text-transform: capitalize;
+        @media only screen and (max-width: 480px) {
+            font-size: 26px;
+        }
+    }
+    .page-sub-text {
+        margin: 0;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+        position: relative;
+        &:before {
+            content: "";
+            width: 90px;
+            background: #333;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -8px;
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.25);
+    }
+}
+
+.section-title-area {
+    padding: 30px 0;
+    .section-title {
+        color: $color__black;
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: -3px;
+        text-transform: capitalize;
+        @media only screen and (max-width: 767px) {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    }
+    .section-title-dec {
+        font-family: inherit;
+        color: #777777;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.015em;
+    }
+    .section-name {
+        font-family: inherit;
+        margin-bottom: 0;
+        font-size: 22px;
+    }
+    &.style-two {
+       .section-title {
+            font-size: 75px;
+            color: $color__heading-two;
+            @media only screen and (max-width: 767px) {
+                font-size: 45px;
+            }
+       } 
+       .section-title-dec {
+            font-size: 20px;
+            font-weight: 600;
+            @media only screen and (max-width: 767px) {
+                font-size: 18px;
+            }
+       }
+    }
+}
+
+.section-title-area  .section-title-one,
+.hotel-room-section-title {
+    .section-title-dec {
+        padding: 0 60px;
+        @media only screen and (max-width: 767px) {
+            padding: 0;
+        }
+    }
+}
+
+.section-align-title-area {
+    .section-align-title {
+        color: $color__heading-two;
+        font-size: 75px;
+        font-weight: bold;
+        line-height: 1.12em;
+        margin: 0 0 15px;
+        @media only screen and (max-width: 767px) {
+            font-size: 45px;
+        }
+    }
+    .section-align-title-dec {
+        color: #525252;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.75em;
+        margin-bottom: 30px;
+    }    
+    .section-name {
+        font-family: inherit;
+        font-size: 20px;
+        color: $color__menu-texttwo;
+        font-weight: 600;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+    .section-align-sub-title {
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+}
+
+.gallery-section-name {
+    font-size: 125px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    color: $color__theme-secondary;
+    @media only screen and (max-width: 992px) {
+        font-size: 75px;
+    }
+    span {
+        display: block;
+        &:nth-child(1) {
+            font-size: 30px;
+            font-family: $font__body;
+            margin-bottom: -25px;
+            color: #616161;
+            @media only screen and (max-width: 992px) {
+                margin-bottom: 0;
+            }
+        }        
+        &:nth-child(2) {
+            font-size: 160px;
+            font-family: $font__body;
+            color: #494949;
+            @media only screen and (max-width: 992px) {
+                font-size: 75px;
+            }
+        }
+    }
+}
+
+
+.customer-section-title-area {
+    color: $color__theme-secondary;
+    margin: 90px 0 60px;
+    >.fa {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .section-title {
+        text-transform: uppercase;
+        color: inherit;
+        font-family: inherit;
+        font-size: 32px;
+        font-weight: normal;
+        span {
+            font-weight: bold;
+        }
+        @media only screen and (max-width: 992px) {
+            font-size: 25px;
+            margin-top: 0;
+        }
+    }
+}
+
+.section-title-area.section-title-area-four {
+    padding: 30px 0 10px;
+    .sub-title {
+        font-size: 30px;
+        font-style: italic;
+        margin: 0 0 -15px;
+        text-transform: capitalize;
+    }
+    .section-title {
+        font-size: 75px;
+        margin: 0 0 20px;
+        @media only screen and (max-width: 767px) {
+            font-size: 45px;
+        }
+    }
+    .section-title-dec {
+        color: $color__border-abbr;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.section-align-title-area.style-two {
+    text-align: right;
+    .section-align-title {
+        color: #2b2b2b;
+        font-size: 42px;
+        font-weight: normal;
+    }
+    .section-align-title-dec {
+        font-weight: normal;
+        line-height: 1.75em;
+    }
+}
+.page-sub-heading {
+    color: #656565;
+    font-family: $font__body;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 35px 0 60px;
+    > .rating {
+        margin: 0 15px;
+    }
+}
+
+.title-text.text-center {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px 0 45px;
+    color: #3d4348;
+}
+
+
+.single-gallery-group {    
+    .section-title-area{
+        padding: 0 0 60px;
+        @media only screen and (max-width: 767px) {
+            padding-bottom: 30px;
+        }
+        .section-title {
+            font-size: 90px;
+            line-height: 1em;
+            margin: 0 0 15px;
+            color: $color__heading;
+            @media only screen and (max-width: 767px) {
+                font-size: 45px;
+            }
+         }
+    }
+} 
+
+.related-post-heading .heading {
+    color: $color__heading-two;
+    font-family: $font__body;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0 15px;
+    text-transform: capitalize;
+}
+
+.spa-pricing-area,
+.wedding-plan-area {
+    .section-title-area .section-title {
+        color: #656565;
+        font-size: 30px;
+    }
+}
+
+.wedding-page-area {
+    .section-align-title-area {
+        @media only screen and (min-width: 992px) {
+            margin-top: 20px;
+        }
+        .section-align-title-dec {
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1.75em;
+        }
+    }
+    .col-md-5 {
+        @media only screen and (min-width: 992px) {
+            padding-left: 75px;
+        }
+    }
+}

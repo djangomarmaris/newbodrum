@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+#About US
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+	.best-place-area {
+        .section-align-title-area .section-align-title {
+            padding-right: 0px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+	.best-place-area {
+        .section-align-title-area {
+            margin-bottom: 45px;
+            text-align: center;
+        }
+    }
+    
+    .facts-content {
+        height: 200px;
+        .single-count {
+            .count-number {
+                font-size: 50px;
+            }
+            .text {
+                font-size: 32px;
+            }
+        }
+    }
+    .single-achievement.achievement-right {
+        text-align: left;
+        li > h4 span {
+            float: none;
+            margin-right: 10px;
+        }
+    }
+} 
+@media only screen and (max-width: 767px) {
+	.best-place-area {
+        .heading {
+            padding: 10px 0 20px;
+        }
+    } 
+}  
+@media only screen and (max-width: 600px) {
+	.about-us-area {
+        padding: 60px 0 25px;
+    }
+    .facts-content {
+        padding: 25px 0px;
+        .single-count {
+            margin: 20px 0;
+            width: 49%;
+            display: inline-block;
+        }
+    }
+    .single-achievement {
+        margin-bottom: 45px;
+        .achievement-title {
+            font-size: 60px;
+            margin: 0 0 30px;
+        }
+        > p {
+            margin-bottom: 25px;
+        }
+        li {
+            margin-bottom: 35px;
+        }
+    }
+}

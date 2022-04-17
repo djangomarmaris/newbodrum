@@ -1,0 +1,20 @@
+- var page = window.location.pathname
+
+extends jade-parts/docwrapper
+
+append pagetitle
+    |contact
+
+append pagesubtitle
+    | Get in touch with OI Themes Hotel
+    
+append pagename
+    |contact
+    
+append sitewellcome
+    //- Included Page heading And Page Nav
+    include jade-parts/page-heading-and-nav.jade
+    
+append sitecontent
+    //- Included Contact Us Content
+    include jade-parts/contact-us-content.jade

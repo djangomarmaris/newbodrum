@@ -1,0 +1,19 @@
+extends jade-parts/docwrapper
+
+append pagetitle
+    |Customar Review
+    
+append pagename
+    |Customar Review
+    
+append sitewellcome
+    //- Included Page heading And Page Nav
+    include jade-parts/page-heading-and-nav.jade
+    
+append reviewsidebar
+    //- Included Review sidebar Content
+    include jade-parts/review-sidebar.jade
+    
+append sitecontent
+    //- Included Review Page Content
+    include jade-parts/review-page-withmasonary-content.jade

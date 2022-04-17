@@ -1,0 +1,79 @@
+.error-page-area{
+    padding: 75px 0 90px;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.25);
+    }
+}
+.error-page-content {
+    color: $color__white;
+    .error-title,
+    .error-404 {
+        color: inherit;
+    }  
+    .error-title {
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: capitalize;
+        margin-top: 20px;
+    }
+    .error-404 span {
+        display: block;
+        font-size: 180px;
+        font-weight: 900;
+        line-height: 1em;
+        margin-bottom: 10px;
+        @media only screen and (max-width: 1200px) {
+            font-size: 150px;
+        }
+    }
+    .error-404 {
+        margin: -30px 0 30px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .link-home {
+        background-color: transparent;
+        border: 2px solid #9d9d9d;
+        font-family: $font__heading;
+        font-size: 20px;
+        padding: 20px 85px;
+        text-transform: uppercase;
+    }
+}
+/*--------------------------------------------------------------
+# 404 page Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+    .error-page-area {
+        padding: 60px 0 80px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .error-page-area {
+        padding: 50px 0 70px;
+    }
+    .error-page-content {
+        .error-title {
+            font-size: 26px;
+            margin-bottom: 0px;
+        }
+        .error-404 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            span {
+                font-size: 130px;
+            }
+        }
+        .link-home {
+            padding: 13px 40px;
+            font-size: 16px;
+        }
+    }
+}

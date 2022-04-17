@@ -1,0 +1,112 @@
+.contact-us-area.margin-top
+    .container
+        .row
+            .col-md-4
+                .contact-us-content
+                    .section-align-title-area
+                        h2.section-align-title
+                            |contact us
+                    <!--/.section-align-title-area-->
+                    .single-contact-info
+                        h2.title
+                            |Restaurant Reception
+                        .content
+                            p
+                                |mail@livekitchen.com
+                            p
+                                |Call Us - 01623 030020
+                            p
+                                |112/B - Road Number 08/A Sydne, Australia
+                    <!--/.single-contact-info-->
+                    .single-contact-info
+                        h2.title
+                            |Company details
+                        .content
+                            p
+                                |mail@livekitchen.com
+                            p
+                                |Call Us - 01623 030020
+                            p
+                                |112/B - Road Number 08/A Sydne, Australia
+                    <!--/.single-contact-info-->
+                <!--/.contact-us-content-->
+            <!--/.col-md-4-->
+            
+            .col-md-8
+                .row
+                    .col-md-12
+                        h2.title-text.text-center
+                            |Have a question?
+                    <!--/.col-md-12-->
+                <!--/.row-->
+                #contact-form-wrap
+                    .row
+                        .col-md-12
+                            .sand-message-title-area.text-center
+                                img(src="images/message-icon.png" alt="icon")
+                                h2.sand-message-heading
+                                    | sand us a email
+                            <!--/.sand-message-title-area-->
+                        <!--/.col-md-12-->
+                        .col-md-12
+                            #respond.contact-respond
+                                form#contact_form(name="contactForm"  method="post" action="contact-form.php")
+                                    .row
+                                        .col-md-6.col-sm-6
+                                            p
+                                                input(type='text' name='name' id='name' class="form-controllar"  aria-required="true" placeholder="Name*")
+                                        <!--/.col-md-6-->
+                                        
+                                        .col-md-6.col-sm-6
+                                            p
+                                                input(type='text' name='email' id='email' class="form-controllar"  aria-required="true" placeholder="Email*")
+                                        <!--/.col-md-6-->
+                                        
+                                        .col-md-12
+                                            p
+                                                input(type="text" placeholder="Sub: of the email*" aria-required="true" class="form-controllar" id="url" name="url") 
+                                        <!--/.col-md-12-->
+                                        
+                                        .col-md-12
+                                            p
+                                                textarea(name='message' id='message' class="form-controllar" aria-required="true" rows="5" cols="45" placeholder="Your message")
+                                        <!--/.col-md-12-->
+                                        
+                                        .col-md-12.text-center
+                                            button.btn.btn-submit(type="submit")
+                                                |submit
+                                        <!--/.col-md-12-->
+                                    <!--/.row-->   
+                                <!--/#contact-form-->
+                            <!--/.contact-respond-->
+                        <!--/.col-md-12-->
+                    <!--/.row-->
+                <!--/#contact-form-wrap-->  
+            <!--/.row-->  
+        <!--/.col-md-6-->  
+    <!--/.container-->  
+<!--/.contact-us-area--> 
+
+
+.contact-google-map-area
+    .container
+        .row
+            .col-md-12
+                .section-title-area.section-title-area-four.text-center
+                    h4.sub-title
+                        |Find Our location
+                    h2.section-title
+                        |Map &amp; Directions
+                    p.section-title-dec
+                        |Find out how to find us from your current location
+                <!--/.section-title-area--> 
+            <!--/.col-md-12-->  
+        <!--/.row-->
+        .row
+            .col-md-12
+                .gmaps-area
+                    #gmaps  
+            <!--/.col-md-12-->  
+        <!--/.row-->  
+    <!--/.container-->  
+<!--/.contact-google-map-area--> 

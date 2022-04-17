@@ -1,0 +1,15 @@
+extends jade-parts/docwrapper
+
+append pagetitle
+    |events list
+    
+append pagename
+    |event
+    
+append sitewellcome
+    //- Included Page heading And Page Nav
+    include jade-parts/page-heading-and-nav.jade
+    
+append sitecontent
+    //- Included Events List Content
+    include jade-parts/event-list-content.jade

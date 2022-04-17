@@ -1,0 +1,21 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	border: 1px solid $color__border-three;
+}
+th {
+	border: 1px solid $color__border-three;
+}
+td {
+	@extend th;
+	border-width: 0 1px 1px 0;
+}
+.tb {
+    display: table;
+    .tb-cell {
+        vertical-align: middle;
+        display: table-cell;
+        height: 100%;
+        width: 100%;
+    }
+}
