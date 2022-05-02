@@ -1,103 +1,34 @@
 {% load static i18n %}
 
-<footer id="colophon" style="background-image: url({% static 'images/footer-bottom-bg.jpg' %});" class="site-footer">
-        <div id="footer-bottom-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="widget-area footer-sidebar-1">
-                            <aside class="widget clearfix widget_about-us">
-                                <div class="widget-title-area">
-                                    <h4 class="widget-title">Bodrum Marmaris Mutfak</h4>
-                                </div><!--/.widget-title-area-->
-                                <div class="widget-content">
-                                    <p>Müşterilerimiz ve tedarikçilerimiz tarafından tercih edilen firma olmak, Eşitlik ve çeşitlilik konusunda sektöre örnek olmak, toplumu güçlendirmek ve çevreye duyarlılığını devam ettiren bir firma olmak</p>
-                                    <a href="#" class="btn btn-default">more</a>
-                                </div>
-                            </aside><!--/.widget-about-us-->
-                        </div><!--/.footer-sidebar-1-->
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="widget-area footer-sidebar-2">
-                            <aside class="widget clearfix widget_opening_hour">
-                                <div class="widget-title-area">
-                                    <h4 class="widget-title">Çalışma Saatleri</h4>
-                                </div><!--/.widget-title-area-->
-                                <div class="widget-opening-hour">
-                                    <ul>
-                                        <li>Pazartesi
-                                            <span class="pull-right">09:00 - 18:30</span>
-                                        </li>
-                                        <li>Salı
-                                            <span class="pull-right">09:00 - 18:30</span>
-                                        </li>
-                                        <li>Çarşamba
-                                            <span class="pull-right">09:00 - 18:30</span>
-                                        </li>
-                                        <li>Perşembe
-                                            <span class="pull-right">09:00 - 18:30</span>
-                                        </li>
-                                        <li>Cuma
-                                            <span class="pull-right">09:00 - 18:30</span>
-                                        </li>
-                                        <li>Cumartesi
-                                            <span class="pull-right">09:00 - 18:30</span>
-                                        </li>
-                                        <li class="offday">Pazar
-                                            <span class="pull-right">Closed</span>
-                                        </li>
-                                    </ul>
-                                </div><!--/.widget-content-->
-                            </aside>    <!--/.widget-categories-->
-                        </div><!--/.footer-sidebar-2-->
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-sm-6 col-md-4">
-                        <div class="widget-area footer-sidebar-3">
-                            <aside class="widget clearfix widget_newsletter">
-                                <div class="widget-title-area">
-                                    <h4 class="widget-title">Bizi Takip Et.</h4>
-                                </div><!--/.widget-title-area-->
-                                <div class="newsletter-area text-center">
-                                    <p>Kayıt olarak Bodrum Marmaris Mutfak'la tüm yeniliklerden Haberdar ol.</p>
-                                    <form  method="post" name="form-newsletter" id="form-newsletter">
-                                        {% csrf_token %}
-                                        <input required placeholder="Email giriniz" aria-required="true" id="email_1" name="email" type="email" class="form-controller">
-                                        <button name="btnSubmit"  id="mc-embedded-subscribe" value="Subscribe" type="submit" class="mail-chip-button">Kayıt Ol.</button>
-                                    </form><!--/.form-newsletter-->
-                                </div><!--/.newsletter-area-->
-                            </aside><!--/.widget_newsletter-->
-                        </div><!--/.footer-sidebar-3-->
-                    </div><!--/.col-md-4-->
-                </div><!--/.row-->
-
-                <div class="row">
-                    <!--div class="col-md-12">
-                        <div class="payment-method text-center">
-                            <a href="#">
-                                <img src="images/card/card-1.png" alt="card">
-                            </a>
-                            <a href="#">
-                                <img src="images/card/card-2.png" alt="card">
-                            </a>
-                            <a href="#">
-                                <img src="images/card/card-3.png" alt="card">
-                            </a>
-                            <a href="#">
-                                <img src="images/card/card-4.png" alt="card">
-                            </a>
-                        </div>
-                    </div-->
-
-                    <div class="col-md-12">
-                        <div class="copyright text-center">
-                            <p>Copyright & All Right Reserved
-                                <a href="www.centralwebagency.com" type="_blank"> Central Web Agency</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer>
+			<div class="container-fluid">
+				<div class="row row1">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="logo animated" data-animation="fadeInUp" data-animation-delay="400"><img src="images/logos/f-logo.png" class="img-responsive center-block" alt=""></div>
+						<ul class="social-icons animated" data-animation="fadeInUp" data-animation-delay="600">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+						<div class="totop">
+							<a href="#" class="scrollup"><img src="{% static 'images/icons/to-top/to-top.png' %}" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="dark-texture-02">
+				<div class="container">
+					<div class="row row2">
+						<div class="col-lg-6 col-md-6">
+							<ul class="links">
+								<li><a href="/">Ana Sayfa</a></li>
+								<li><a href="">Hakkımızda</a></li>
+								<li><a href="">İletişim</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="copyright">© 2022 CWA Powered By  <a href="www.centralwebagency.com">Central Web Agency</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>

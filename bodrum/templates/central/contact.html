@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>İletişim</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="inner-banner title-area text-center image-5">
+			<div class="container title-area-content">
+				<h1 class="animated" data-animation="fadeInUp" data-animation-delay="200">Contact Us</h1>
+				<h2 class="animated" data-animation="fadeInDown" data-animation-delay="200">All about delicieux</h2>
+			</div>
+		</div>
+		<!-- /. INNER BANNER STARTS
+			========================================================================= -->
+		<div class="white-bg">
+			<!-- GET IN TOUCH STARTS
+				========================================================================= -->
+			<div class="container contact-us">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="block">
+							<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+							<div class="caption">Adres</div>
+							<div class="line"></div>
+							<div class="description">32 Nasr City, Abdul Raouf St P.O Box,<br>358 Mukram Abeed View.<br>UEA</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="block">
+							<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="caption">Telefon Numarası</div>
+							<div class="line"></div>
+							<div class="description">Local:  + 022 0100 843 1112<br>Mobile: 0100 8422222<br>Hot Line: 102154</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="block">
+							<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+							<div class="caption">Email Adres</div>
+							<div class="line"></div>
+							<div class="description"><a href="mailto:reservation@xxxxx.com">reservation@xxx.com</a><br><a href="mailto:support@xxxx.com">support@xxxxx.com</a><br><a href="mailto:sales@xxxx.com">sales@xxxx.com</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Google Map Starts -->
+			<div class="container-fluid">
+				<div class="row no-gutter-12">
+					<div class="col-lg-12 maps animated" data-animation="fadeInUp" data-animation-delay="400">
+						<iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=bodrum+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" height="400" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<!-- Google Map Ends -->
+			<div class="get-in-touch">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="herotext">
+								<p class="box-heading animated" data-animation="fadeInUp" data-animation-delay="400">
+									<span>Bize Yaz</span>
+								</p>
+								<div class="description animated" data-animation="fadeInUp" data-animation-delay="600">One morning, when Gregor Samsa woke from troubled dreams, he found himself<br>transformed in his bed into a horrible vermin. </div>
+							</div>
+						</div>
+					</div>
+					<form method='post' >
+						{% csrf_token %}
+						<div class="row animated" data-animation="fadeInUp" data-animation-delay="800">
+							<div class="col-lg-6 col-lg-offset-3 center">
+								<div class="form-group">
+									<input type="text" class="form-control" name="name" placeholder="İsim / Soyisim *">
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" name="subject" placeholder="Konu">
+								</div>
+								<div class="form-group">
+									<textarea rows="5" class="form-control" name="comment" placeholder="Mesaj *"></textarea>
+								</div>
+								<div id='message_post'></div>
+								<input class="btn btn-default" name='btnSubmit' type="submit">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- /. GET IN TOUCH ENDS
+				========================================================================= -->
+			<!-- NEWSLETTER STARTS
+				========================================================================= -->
+			<div class="container-fluid newsletter">
+				<div class="row row1">
+					<div class="col-lg-4 col-lg-offset-4">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<h1>STAY UP TO DATE</h1>
+							<div class="description">Sign up to  newsletter for the latest on all things Suitsupply</div>
+						</div>
+						<form class="form-inline animated" data-animation="fadeInUp" data-animation-delay="600">
+							<div class="form-group">
+								<input type="email" class="form-control" id="newsletter" placeholder="Enter you e-mail Address">
+							</div>
+							<button type="submit" class="btn btn-default"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+{% endblock %}
+
+
+{% block jss %}
+{% endblock %}

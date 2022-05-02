@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Hakkımızda</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="inner-banner title-area text-center image-5">
+			<div class="container title-area-content">
+				<h1 class="animated" data-animation="fadeInUp" data-animation-delay="200">Reservation</h1>
+				<h2 class="animated" data-animation="fadeInDown" data-animation-delay="200">All about delicieux</h2>
+				<div class="line animated" data-animation="fadeInDown" data-animation-delay="400"></div>
+                <div class="bread-crumb"><a href="#">Home</a> <span>Reservation</span></div>
+			</div>
+		</div>
+<div class="menu-grid">
+				<div class="container">
+					<div class="row">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<p class="box-heading">
+								<span>Ürünlerimiz</span>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+                      {% for product in products %}
+						<div class="col-lg-4 col-md-4 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="400">
+							<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+								<p class="box-heading">
+									<span style="font-size:15px;">{{product.name}}</span>
+								</p>
+							</div>
+							<div class="picture">
+								<img src="{% if product.image %}{{ product.image.url }}{% else %}{% endif %}" class="img-responsive" alt=""/>
+								<!-- Picture Overlay Starts -->
+								<div class="portfolio-overlay-2">
+									<div class="icons">
+										<div>
+											<h1>{{product.name}}</h1>
+											<p class="line"></p>
+                                            <p class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+											<span class="icon"> <a href="{{product.get_absolute_url}}" class="#">İncele</a></span>
+										</div>
+									</div>
+								</div>
+								<!-- Picture Overlay Ends -->
+							</div>
+						</div>
+                      {% endfor %}
+
+					</div>
+				</div>
+			</div>
+{% endblock %}
+
+
+
+
+{% block jss %}
+{% endblock %}

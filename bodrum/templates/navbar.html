@@ -1,95 +1,98 @@
 {% load static i18n %}
-<header id="masthead" class="site-header">
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 hidden-xs">
-              <div class="addresses">
-                <div class="phone"><i class="fa fa-phone"></i>
-                  <p>Telefon - <span>01623 030020</span></p>
-                </div>
-                <div class="email"><i class="fa fa-envelope"></i>
-                  <p>mail@livekitchen.com</p>
-                </div>
-              </div><!--/.addresses-->
-            </div><!--/.col-md-8-->
-            <div class="col-md-4">
-              <div class="social-links"><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a></div><!--/.social-links-->
-              <div class="search-area hidden-xs"><i class="fa fa-search"></i>
-                <div class="header-search">
-                  <div class="search default">
-                    <form action="#" method="get" class="searchform">
-                      <div class="input-group">
-                        <input type="search" name="s" placeholder="Search here..." class="form-controller"><span class="input-group-btn">
-                          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button></span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-              <div class="mobile-search-area hidden-sm hidden-md hidden-lg">
-                <!--i.fa.fa-search-->
-                <div class="header-search">
-                  <div class="search default">
-                    <form action="#" method="get" class="searchform">
-                      <div class="input-group">
-                        <input type="search" name="s" placeholder="Search here..." class="form-controller"><span class="input-group-btn">
-                          <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button></span>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div><!--/.search-area-->
-            </div><!--/.col-md-4-->
-          </div><!--/.row-->
-        </div><!--/.container-->
-      </div><!--/.header-top-->
-      <!--Header Bottom-->
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="menu-wrapper clearfix">
-                <div class="navbar-header pull-left">
-                  <div class="logo-block" style="margin: -20px 2px -20px; text-align: center;"><a href="index.html" class="site-logo"><img width="100" src="{% static 'logolast.png' %}" alt="sitelogo" class="logo"></a><!--/.site-logo--></div>
-                </div><!--/.navbar-header-->
-                <div class="collapse navbar-collapse pull-right">
-                  <div class="navigation hidden-sm hidden-xs">
-                    <ul class="nav navbar-nav mainmenu">
-                      <li><a href="/">Ana Sayfa</a>
-                      </li>
-                      <li><a href="/bodrum-mutfak/about/">Hakkımızda</a>
-                      </li>
-                      <li><a href="/bodrum-mutfak/our-parthners/">Bayiliklerimiz</a>
-                      </li>
-                      <li><a href="/bodrum-mutfak/gallery/" target="_blank">Galeri</a>
+<!-- PAGE BORDER STARTS
+			========================================================================= -->
+		<div id="left"></div>
+		<div id="right"></div>
+		<div id="top"></div>
+		<div id="bottom"></div>
+		<!-- /. PAGE BORDER ENDS
+			========================================================================= -->
+		<!-- PRELOADER STARTS
+			========================================================================= -->
+		<div id="preloader">
+			<div id="status">
+				<div class="logo"><img width="100" src="{% static 'logolastdark.png' %}" alt=""></div>
+				<div class="sk-cube-grid">
+					<div class="sk-cube sk-cube1"></div>
+					<div class="sk-cube sk-cube2"></div>
+					<div class="sk-cube sk-cube3"></div>
+					<div class="sk-cube sk-cube4"></div>
+					<div class="sk-cube sk-cube5"></div>
+					<div class="sk-cube sk-cube6"></div>
+					<div class="sk-cube sk-cube7"></div>
+					<div class="sk-cube sk-cube8"></div>
+					<div class="sk-cube sk-cube9"></div>
+				</div>
+			</div>
+		</div>
+		<!-- /. PRELOADER ENDS
+			========================================================================= -->
+		<!-- NAVIGATION STARTS
+			========================================================================= -->
+		<nav class="navbar yamm navbar-default fill-black normal">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand visible-sm visible-xs light-logo" href="#"><img  src="{% static 'logolastdark.png' %}" alt=""></a>
+					<a class="navbar-brand visible-sm visible-xs dark-logo" href="#"><img  src="{% static 'logolast.png' %}" alt=""></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInLeft">
+						<li class="pull-left"><a class="navbar-brand hidden-sm hidden-xs light-logo" href="#"><img style="margin-top: -15px;" width="100" src="{% static 'logolastdark.png' %}" alt=""></a> <a class="navbar-brand hidden-sm hidden-xs dark-logo" href="#"><img style="margin-top: -15px;" width="100" src="{% static 'logolast.png' %}" alt=""></a></li>
+						<li class="social-header pull-right hidden-xs hidden-sm hidden-md"><a href="#" class="transparent-grey"><i class="fa fa-facebook"></i></a> <a href="#" class="transparent-grey"><i class="fa fa-twitter"></i></a> <a href="#" class="transparent-grey"><i class="fa fa-instagram"></i></a> <a href="#" class="transparent-grey"><i class="fa fa-tripadvisor"></i></a></li>
+						<li class="dropdown">
+							<a href="/" class="dropdown-toggle nav-menu"  role="button" aria-haspopup="true" aria-expanded="false">Ana Sayfa</a>
+						</li>
+						<li class="dropdown">
+							<a href="/bodrum-marmaris-mutfak/about/" class="dropdown-toggle nav-menu"  role="button" aria-haspopup="true" aria-expanded="false">Hakkımızda</a>
+						</li>
+						<li><a href="/bodrum-marmaris-mutfak/our-parthners/" class="nav-menu">Bayiliklerimiz</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle nav-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ürünlermiz</a>
+							<ul class="dropdown-menu">
 
-                      </li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="#">İletişim</a>
-                      </li>
-                      <li><a href="#">Events</a>
-                        <ul class="sub-menu">
-                          <li><a href="event-list.html">Event List                               </a></li>
-                          <li><a href="events.html">Event Timeline</a></li>
-                        </ul>
-                      </li>
-                    </ul><!--/.mainmenu-->
-                  </div><!--/.navigation-->
-                  <!--Mobile Main Menu-->
-                  <div class="mobile-menu-main hidden-md hidden-lg">
-                    <div class="menucontent overlaybg"> </div>
-                    <div class="menuexpandermain slideRight"><a id="navtoggole-main" class="animated-arrow slideLeft menuclose"><span></span></a><span id="menu-marker"></span></div><!--/.menuexpandermain-->
-                    <div id="mobile-main-nav" class="main-navigation slideLeft">
-                      <div class="menu-wrapper">
-                        <div id="main-mobile-container" class="menu-content clearfix"></div>
-                      </div>
-                    </div><!--/#mobile-main-nav-->
-                  </div><!--/.mobile-menu-main-->
-                </div><!--/.navbar-collapse-->
-              </div><!--/.menu-wrapper-->
-            </div><!--/.col-md-12-->
-          </div><!--/.row-->
-        </div><!--/.container-->
-      </div><!--/.header-bottom-->
-    </header><!--/.site-header-->
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Otel Ekipmanları</a>
+									<ul class="dropdown-menu">
+										{% for x in otel %}
+										<li><a href="{{x.get_absolute_url}}">{{x.name}}</a></li>
+										{% endfor %}
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Endüstriyel Mutfak</a>
+									<ul class="dropdown-menu">
+										{% for x in endüs %}
+										<li><a href="{{x.get_absolute_url}}">{{x.name}}</a></li>
+										{% endfor %}
+									</ul>
+								</li>
+								<li class="dropdown-submenu">
+									<a tabindex="-1" href="#">Açık Büfe</a>
+									<ul class="dropdown-menu">
+										{% for x in open %}
+										<li><a href="{{x.get_absolute_url}}">{{x.name}}</a></li>
+										{% endfor %}
+									</ul>
+								</li>
+
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="/bodrum-marmaris-mutfak/contact/" class="dropdown-toggle nav-menu"  role="button" aria-haspopup="true" aria-expanded="false">İletişim</a>
+
+						</li>
+
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>

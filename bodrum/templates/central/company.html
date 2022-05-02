@@ -33,57 +33,56 @@
 
 
 {% block content %}
-<section class="our-menu-section zero-pd-top bg-white-smoke">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-area text-center">
-                        <h2 class="section-title italic-style">
-                            <br> Bayilikerimiz</h2>
-                        <p class="section-title-dec">Bodrum Marmaris Mutfak</p>
-                    </div>
-                </div>
+<div class="inner-banner title-area text-center image-5">
+			<div class="container title-area-content">
+				<h1 class="animated" data-animation="fadeInUp" data-animation-delay="200">Bodrum Marmaris Mutfak</h1>
+				<h2 class="animated" data-animation="fadeInDown" data-animation-delay="200">All about delicieux</h2>
+				<div class="line animated" data-animation="fadeInDown" data-animation-delay="400"></div>
 
-                <div class="clearfix"></div>
+			</div>
+		</div>
+<div class="menu-grid">
+				<div class="container">
+					<div class="row">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<p class="box-heading">
+								<span>Bayilikler</span>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+                      {% for product in companys %}
+						<div class="col-lg-4 col-md-4 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="400">
+							<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+								<p class="box-heading">
+									<span style="font-size:15px;">{{product.name}}List</span>
+								</p>
+							</div>
+							<div class="picture">
+								<img width="500" src="{% if product.image %}{{ product.image.url }}{% else %}{% endif %}" class="img-responsive" alt=""/>
+								<!-- Picture Overlay Starts -->
+								<div class="portfolio-overlay-2">
+									<div class="icons">
+										<div>
+											<h1>{{product.name}}</h1>
+											<p class="line"></p>
+                                            <p class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+											<!--span class="icon"> <a href="" class="#">İncele</a></span-->
 
-                <div class="container">
+										</div>
+									</div>
+								</div>
+								<!-- Picture Overlay Ends -->
+							</div>
+						</div>
+                      {% endfor %}
 
-                    <div class="menu-content-area">
-                        <div class="menu-item-slider owl-carousel">
-                            <div class="item">
-                                <div class="row">
-                                    {% for company in companys %}
-                                    <div class="col-md-3 col-sm-6 col-xs-6">
-                                        <div class="menu-item-two">
-                                            <div class="image-area">
-                                                <a href="{{company.katalog.url}}" target="_blank">
-                                                    <img src="{% if company.image %}{{ company.image.url }}{% else %}{% endif %}" alt="menu-item">
-                                                </a>
-                                            </div>
-                                            <div class="menu-content text-center">
-                                                <h5 class="menu-title">
-                                                    <a href="#">{{company.name}}</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {% endfor %}
-
-
-                                    <div class="clearfix"></div>
-
-                                </div><!--/.row-->
-                            </div><!--/.item-->
-
-                        </div><!--/.menu-item-slider-->
-                    </div><!--/.menu-content-area-->
-
-                </div><!--/.container-->
-            </div><!--/.row-->
-        </div><!--/.container-fluid-->
-    </section><!--/.our-menu-section-->
-
+					</div>
+				</div>
+			</div>
 {% endblock %}
+
+
 
 
 {% block jss %}

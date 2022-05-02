@@ -1,0 +1,122 @@
+
+
+{% load static i18n %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'galery/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'galery/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'galery/css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'galery/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'galery/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'galery/css/lightgallery.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'galery/css/bootstrap-datepicker.css' %}">
+
+    <link rel="stylesheet" href="{% static 'galery/fonts/flaticon/font/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'galery/css/swiper.css' %}">
+
+    <link rel="stylesheet" href="{% static 'galery/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'galery/css/style.css' %}">
+
+{% endblock %}
+
+{% block seo %}
+
+
+<title>Galeri</title>
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<link rel="canonical" href=""/>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="googlebot" content="index,follow"/>
+
+<meta name="author" content="İhsan Gürol Demirtaş">
+
+<meta name="publisher" content="2020.01" />
+
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="site-section"  data-aos="fade">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+
+        <div class="col-md-7">
+          <div class="row mb-5">
+            <div class="col-12 ">
+              <h2 class="site-section-heading text-center">Bodrum Marmaris Mutfak</h2>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-7">
+          <div class="row mb-5">
+            <div class="col-12 ">
+              <h2 class="site-section-heading text-center">{{product.name}}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+        <br>
+        <br>
+      <div class="row" id="lightgallery">
+        {% for y in images %}
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 item" data-aos="fade" data-src="{% if y.image %}{{ y.image.url }}{% else %}{% endif %}" data-sub-html="<h4 style='color: white;'>Bodrum Marmaris Mutfak</h4><p style='color: white;'>{{x.info}}</p>">
+          <a href="#"><img src="{% if y.image %}{{ y.image.url }}{% else %}{% endif %}" alt="IMage" class="img-fluid"></a>
+        </div>
+        {% endfor %}
+      </div>
+        <a href="/">
+        <div class="row form-group">
+            <div class="row form-group">
+                  <div class="col-md-12" style="color:black;">
+                    <input value="Ana Sayfa" class="btn btn-black py-2 px-4">
+                  </div>
+                </div>
+
+        </a>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+{% block jss %}
+ <script src="{% static 'galery/js/jquery-3.3.1.min.js' %}"></script>
+  <script src="{% static 'galery/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'galery/js/jquery-ui.js' %}"></script>
+  <script src="{% static 'galery/js/popper.min.js' %}"></script>
+  <script src="{% static 'galery/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'galery/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'galery/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'galery/js/jquery.countdown.min.js' %}"></script>
+  <script src="{% static 'galery/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'galery/js/bootstrap-datepicker.min.js' %}"></script>
+  <script src="{% static 'galery/js/swiper.min.js' %}"></script>
+  <script src="{% static 'galery/js/aos.js' %}"></script>
+
+  <script src="{% static 'galery/js/picturefill.min.js' %}"></script>
+  <script src="{% static 'galery/js/lightgallery-all.min.js' %}"></script>
+  <script src="{% static 'galery/js/jquery.mousewheel.min.js' %}"></script>
+
+  <script src="{% static 'galery/js/main.js' %}"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#lightgallery').lightGallery();
+    });
+  </script>
+{% endblock %}

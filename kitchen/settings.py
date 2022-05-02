@@ -27,6 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST ="smtp.yandex.com"
+EMAIL_HOST_USER ="webservice@centralwebagency.com"
+EMAIL_HOST_PASSWORD = "Cocometre18"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 

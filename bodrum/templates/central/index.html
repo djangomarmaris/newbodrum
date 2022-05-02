@@ -33,387 +33,371 @@
 
 
 {% block content %}
- <div class="welcome-slider">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="pogoSlider js-main-slider">
-                    <div data-transition="shrinkReveal" data-duration="1000" style="background-image:url({% static 'sliderback.jpeg' %});" class="pogoSlider-slide style-one">
-                        <h2 class="slider-heading-main">Welcome
-                            <span>Bodrum Marmaris Mutfak</span>
-                        </h2><!--/.water-wrap-->
-                        <div class="slider-container">
-                            <div class="slider-main-content">
-                                <div class="image-before">
-                                    <div  data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
-                                        <h2>Marmaris
-                                            <span>Mutfak</span>
-                                        </h2>
-                                    </div>
-                                    <div class="content">
-                                        <div data-in="slideUp" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Profesyonel</div>
-                                    </div>
-                                </div>
-                                <div data-in="slideDown" data-out="slideUp" data-duration="750" data-delay="500" class="image-content pogoSlider-slide-element">
-                                    <img src="{% static 'images/slider/slider-01.png' %}" alt="slider-burger">
-                                </div>
+<div id="rev_slider_467_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic-carousel26" data-source="gallery" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+			<!-- START REVOLUTION SLIDER 5.3.0.2 fullwidth mode -->
+			<div id="rev_slider_467_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0.2">
+				<ul>
+                    {% for slider in sliders %}
+					<li data-index="rs-1596" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="{% if slider.image %}{{ slider.image.url }}{% else %}{% endif %}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Big flavors" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<!-- MAIN IMAGE -->
+						<img src="{% if slider.image %}{{ slider.image.url }}{% else %}{% endif %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+						<!-- LAYERS -->
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption NotGeneric-Title   tp-resizeme"
+							id="slide-1596-layer-1"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+							data-fontsize="['50','50','50','45']"
+							data-lineheight="['55','55','55','50']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[10,10,10,10]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[10,10,10,10]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 5; white-space: nowrap;text-transform:left;">{{slider.title}}</div>
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption NotGeneric-SubTitle   tp-resizeme"
+							id="slide-1596-layer-4"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[0,0,0,0]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 6; white-space: nowrap;text-transform:left;">{{slider.small}}</div>
+						<!-- LAYER NR. 3 -->
+						<div class="tp-caption NotGeneric-Icon   tp-resizeme"
+							id="slide-1596-layer-8"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[0,0,0,0]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 7; white-space: nowrap;text-transform:left;cursor:default;"><i class="icon-divider"></i></div>
+					</li>
+					<!-- SLIDE  -->
+					<li data-index="rs-1597" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="{% if slider.image2 %}{{ slider.image2.url }}{% else %}{% endif %}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Happy" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<!-- MAIN IMAGE -->
+						<img src="{% if slider.image2 %}{{ slider.image2.url }}{% else %}{% endif %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+						<!-- LAYERS -->
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption NotGeneric-Title   tp-resizeme"
+							id="slide-1597-layer-1"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+							data-fontsize="['50','50','50','45']"
+							data-lineheight="['55','55','55','50']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[10,10,10,10]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[10,10,10,10]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 5; white-space: nowrap;text-transform:left;">{{slider.title2}}</div>
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption NotGeneric-SubTitle   tp-resizeme"
+							id="slide-1597-layer-4"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[0,0,0,0]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 6; white-space: nowrap;text-transform:left;">{{slider.small2}}</div>
+						<!-- LAYER NR. 3 -->
+						<div class="tp-caption NotGeneric-Icon   tp-resizeme"
+							id="slide-1597-layer-8"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[0,0,0,0]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 7; white-space: nowrap;text-transform:left;cursor:default;"><i class="icon-divider"></i></div>
+					</li>
+					<!-- SLIDE  -->
+					<li data-index="rs-1598" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-thumb="{% if slider.image3 %}{{ slider.image3.url }}{% else %}{% endif %}"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Hot" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<!-- MAIN IMAGE -->
+						<img src="{% if slider.image3 %}{{ slider.image3.url }}{% else %}{% endif %}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+						<!-- LAYERS -->
+						<!-- LAYER NR. 1 -->
+						<div class="tp-caption NotGeneric-Title   tp-resizeme"
+							id="slide-1598-layer-1"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+							data-fontsize="['50','50','50','45']"
+							data-lineheight="['55','55','55','50']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[10,10,10,10]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[10,10,10,10]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 5; white-space: nowrap;text-transform:left;">{{slider.title3}}</div>
+						<!-- LAYER NR. 2 -->
+						<div class="tp-caption NotGeneric-SubTitle   tp-resizeme"
+							id="slide-1598-layer-4"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['52','52','52','51']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[0,0,0,0]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 6; white-space: nowrap;text-transform:left;">{{slider.small3}}</div>
+						<!-- LAYER NR. 3 -->
+						<div class="tp-caption NotGeneric-Icon   tp-resizeme"
+							id="slide-1598-layer-8"
+							data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+							data-y="['middle','middle','middle','middle']" data-voffset="['-68','-68','-68','-68']"
+							data-width="none"
+							data-height="none"
+							data-whitespace="nowrap"
+							data-type="text"
+							data-responsive_offset="on"
+							data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+							data-textAlign="['left','left','left','left']"
+							data-paddingtop="[0,0,0,0]"
+							data-paddingright="[0,0,0,0]"
+							data-paddingbottom="[0,0,0,0]"
+							data-paddingleft="[0,0,0,0]"
+							style="z-index: 7; white-space: nowrap;text-transform:left;cursor:default;"><i class="icon-divider"></i></div>
+					</li>
+                    {% endfor %}
+				</ul>
+				<div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
+			</div>
+		</div>
+{% for about in abouts %}
+<div class="container about-us" id="about">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 animated" data-animation="fadeIn" data-animation-delay="600"><img src="{% if about.image %}{{ about.image.url }}{% else %}{% endif %}" class="img-responsive center-block" alt=""></div>
+					<div class="col-lg-6 col-md-6">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<p class="box-heading">
+								<span>Hakkımızda</span>
+							</p>
+						</div>
+						<div class="description animated" data-animation="fadeInDown" data-animation-delay="800">{{about.about}}</div>
+						<div class="button animated" data-animation="flipInX" data-animation-delay="1000"><a href="" class="fill-orange">Hikayemiz</a></div>
+					</div>
+				</div>
+			</div>
+{% endfor %}
+<div class="menu-grid">
+				<div class="container">
+					<div class="row">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<p class="box-heading">
+								<span>Ürünlerimiz</span>
+							</p>
+						</div>
+					</div>
+					<div class="row">
 
-                                <div class="image-after">
-                                    <div data-in="slideRight" data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
-                                        <h2>Bodrum
-                                            <span>Mutfak</span>
-                                        </h2>
-                                    </div>
-                                    <div class="content">
-                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Creative</div>
-                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Special Offer</div>
-                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-text pogoSlider-slide-element">Fast</div>
-                                    </div>
-                                </div>
-                            </div><!--/.image-content-->
-                        </div><!--/.slider-container-->
-                    </div>
-                    <div data-transition="shrinkReveal" data-duration="1000" style="background-image:url({% static 'sliderback.jpeg' %});" class="pogoSlider-slide style-two">
-                        <h2 data-in="slideDown" data-out="slideUp" data-duration="750" data-delay="600" class="slider-heading-main pogoSlider-slide-element">Welcome
-                            <span>Bodrum Marmaris Mutfak</span>
-                        </h2><!--/.water-wrap-->
-                        <div class="slider-container">
-                            <div class="slider-main-content">
-                                <div class="image-before">
-                                    <div data-in="slideLeft" data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
-                                        <h2 style="font-size:20px;">Marmaris</h2>
-                                    </div>
-                                </div>
-                                <div data-in="slideDown" data-out="slideUp" data-duration="750" data-delay="500" class="image-content pogoSlider-slide-element">
-                                    <img src="{% static 'images/slider/slider-02.png' %}" alt="slider-burger">
-                                </div>
-                                <div class="image-after">
-                                    <div data-in="slideRight" data-out="slideUp" data-duration="750" data-delay="600" class="heading pogoSlider-slide-element">
-                                        <h2>Bodrum Mutfak</h2>
-                                    </div>
-                                    <div class="content">
-                                        <div data-in="slideRight" data-out="slideDown" data-duration="750" data-delay="500" class="content-button pogoSlider-slide-element">
-                                            <a class="btn btn-default">Special Offer</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!--/.image-content-->
-                        </div><!--/.slider-container-->
-                    </div>
-                </div><!-- .pogoSlider -->
-            </div><!--/.row-->
-        </div><!--/.container-fluid-->
-    </div><!--/.welcome-slider-->
 
- <section class="booking-with-chif margin-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <form action="#" class="online-book-form style-one color-one">
-                        <h2 class="book-form-title">Bize Yaz
-                            <span>Sana dönelim</span>
-                        </h2>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="input">
-                                    <input type="text" placeholder="İsim" class="form-controller">
-                                </div><!--/.input-->
-                            </div><!--/.col-md-12-->
-                            <div class="col-md-12">
-                                <div class="input">
-                                    <input type="email" placeholder="E-mail" class="form-controller">
-                                </div><!--/.input-->
-                            </div><!--/.col-md-12-->
-                            <div class="col-md-12">
-                                <div class="input">
-                                    <input type="text" placeholder="Telefon" class="form-controller">
-                                </div><!--/.input-->
-                            </div><!--/.col-md-12-->
-                            <div class="col-md-12">
-                                <div class="input">
-                                    <input type="text" placeholder="Başlık" class="form-controller">
-                                </div><!--/.input-->
-                            </div><!--/.col-md-12-->
-                            <div class="col-md-12">
-                                <div class="input">
-                                    <textarea name="message" placeholder="Message" class="form-controller"></textarea>
-                                </div>
-                                <!--/.input-->
-                            </div><!--/.col-md-12-->
-                            <div class="col-md-12">
-                                <a href="#" class="btn btn-default">Gönder</a>
-                                <!--/.btn-->
-                            </div><!--/.col-md-12-->
-                        </div><!--/.row-->
-                    </form><!--/.online-book-form-->
-                </div><!--/.col-md-4-->
+						<div class="col-lg-4 col-md-4 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="400">
+							<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+								<p class="box-heading">
+									<span style="font-size:15px;">Otel Ekipmanları</span>
+								</p>
+							</div>
+							<div class="picture">
+								<img src="{% static 'k1.jpg' %}" class="img-responsive" alt=""/>
 
-                <div class="col-md-8 col-sm-6">
-                    <div class="head-chif-details">
-                        <h2 class="heading-title">Nike Jahids</h2>
-                        <h5 class="sub-heading-title">Head Chef</h5>
-                        {% for write in writes %}
-                        <p> {{write.info}}</p>
-                        {% endfor %}
-                        <div class="chif-sign">
-                            <img src="{% static 'images/head-chip-sign.png' %}" alt="sign">
-                        </div>
-                        <a class="btn btn-default">More</a>
-                    </div><!--/.head-chif-details-->
-                    <div class="head-chif-image">
-                        <img src="{% static 'head-chip-image.png' %}" alt="head-chif-image">
-                    </div><!--/.head-chif-image-->
-                </div><!--/.col-md-8-->
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/.booking-with-chif-->
+								<div class="portfolio-overlay-2">
+									<div class="icons">
+										<div>
+											<h1>Otel Ekipmanları</h1>
+											<p class="line"></p>
+                                            <p class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+											<span class="icon"> <a href="/bodrum-marmaris-mutfak/otel/otel-ekipmani/" class="#">İncele</a></span>
+										</div>
+									</div>
+								</div>
 
-<section class="our-gallery-section bg-white-smoke">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-align-title-area">
-                        <h2 class="section-align-title">Bizim
-                            <br>Özel
-                            <span>Mutfağımız</span>
-                        </h2>
-                        <p class="section-align-title-dec">Size
-                            <br> Özel Mutfak
-                            <br>Endüstiriyel ürünler</p>
-                        {% for special in specials %}
-                        <p>{{special.info}}</p>
-                        {% endfor %}
-                        <a href="gallery.html" class="btn btn-default">Galery</a>
-                    </div><!--/.section-align-title-area-->
-                </div><!--/.col-md-6-->
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="400">
+							<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+								<p class="box-heading">
+									<span style="font-size:15px;">Endüstiriyel Mutfak</span>
+								</p>
+							</div>
+							<div class="picture">
+								<img src="{% static 'k2.jpg' %}" class="img-responsive" alt=""/>
 
-                <div class="col-md-6">
-                    <div class="row gallery-item-content">
-                        {% for special in specials %}
-                        <div class="col-sm-6 col-sx-6 padding-reset">
-                            <a href="{% if special.image %}{{ special.image.url }}{% else %}{% endif %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% if special.image %}{{ special.image.url }}{% else %}{% endif %}">
-                                <div class="overlay">
-                                    <h3>{{special.image_info}}</h3>
-                                </div>
-                            </a>
-                        </div>
+								<div class="portfolio-overlay-2">
+									<div class="icons">
+										<div>
+											<h1>Endüstiriyel Mutfak</h1>
+											<p class="line"></p>
+                                            <p class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+											<span class="icon"> <a href="/bodrum-marmaris-mutfak/endüs/endustiryel-mutfak/" class="#">İncele</a></span>
+										</div>
+									</div>
+								</div>
 
-                        <div class="col-sm-6 col-sx-6 padding-reset">
-                            <a href="{% if special.image2 %}{{ special.image2.url }}{% else %}{% endif %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% if special.image2 %}{{ special.image2.url }}{% else %}{% endif %}">
-                                <div class="overlay">
-                                    <h3>{{special.image_info2}}</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-sx-6 padding-reset">
-                            <a href="{% if special.image3 %}{{ special.image3.url }}{% else %}{% endif %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% if special.image3 %}{{ special.image3.url }}{% else %}{% endif %}">
-                                <div class="overlay">
-                                    <h3>{{special.image_info3}}</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-sx-6 padding-reset">
-                            <a href="{% if special.image4 %}{{ special.image4.url }}{% else %}{% endif %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% if special.image4 %}{{ special.image4.url }}{% else %}{% endif %}">
-                                <div class="overlay">
-                                    <h3>{{special.image_info4}}</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-sx-6 padding-reset">
-                            <a href="{% if special.image5 %}{{ special.image5.url }}{% else %}{% endif %}" class="image-popup-btn">
-                                <img alt="Snowpiercer" src="{% if special.image5 %}{{ special.image5.url }}{% else %}{% endif %}">
-                                <div class="overlay">
-                                    <h3>{{special.image_info5}}</h3>
-                                </div>
-                            </a>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/.our-gallery-section-->
-<section class="our-experts-chefs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-area style-two text-center">
-                        <h2 class="section-title">Sektörün tercihi</h2>
-                        <p class="section-title-dec">Bodrum Marmaris Mutfak</p>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="col-md-12">
-                    <div id="experts-chefs-slider">
-                        <div class="tab-content text-center">
-                            <div id="chef-1" class="tab-pane fade in active">
-                                <div class="image-before hidden-sm hidden-xs">
-                                    <h2>I love
-                                        <span>to</span>
-                                        <span>Made</span>
-                                    </h2>
-                                </div>
-                                <div class="image-content">
-                                    <img src="{% static 'chef1.png' %}" alt="chef photo">
-                                    <h3 class="author-name">Ceyda Mendil</h3>
-                                    <h5 class="author-designation">Osmanlı Mutfağı</h5>
-                                </div>
-                                <div class="image-after hidden-sm hidden-xs">
-                                    <h2>Burger
-                                        <span>and</span>
-                                        <span>Pizza</span>
-                                    </h2>
-                                </div>
-                            </div>
-                            <div id="chef-2" class="tab-pane fade">
-                                <div class="image-before hidden-sm hidden-xs">
-                                    <h2>I love
-                                        <span>to</span>
-                                        <span>Cook</span>
-                                    </h2>
-                                </div>
-                                <div class="image-content">
-                                    <img src="{% static 'chef2.png' %}" alt="chef photo">
-                                    <h3 class="author-name">Rakib Smith</h3>
-                                    <h5 class="author-designation">İtalyan Mutfağı</h5>
-                                </div>
-                                <div class="image-after hidden-sm hidden-xs">
-                                    <h2>Indian
-                                        <span></span>
-                                        <span>Food</span>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div><!--/.carousel-inner-->
-                    </div><!--/.carousel-->
-                </div><!--/.col-md-12-->
-            </div><!--/.row-->
-        </div><!--/.container-->
-        <ul class="experts-chefs-nav">
-            <li class="active">
-                <a href="#chef-1" data-toggle="tab" class="nav-image">
-                    <img src="{% static 'chef1.png' %}" alt="chef photo">
-                </a>
-            </li>
-            <li>
-                <a href="#chef-2" data-toggle="tab" class="nav-image">
-                    <img src="{% static 'chef2.png' %}" alt="chef photo">
-                </a>
-            </li>
-        </ul>
-    </section><!--/.our-experts-chefs-->
-    <section class="our-customer-section">
-        <h2 class="water-wrap">Müşteri Yorumları</h2>
-        <!--/.water-wrap-->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-full-width">
-                    <div class="customer-section-title-area text-center"> <i class="fa fa-quote-right"></i>
-                        <h2 class="section-title">
-                            <span>Mutlu Müşteri</span> Yorumları</h2>
-                    </div><!--/.customer-section-title-area-->
-                </div><!--/.col-md-8-->
-            </div><!--/.row-->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="customer-reviews owl-carousel">
-                        {% for comment in comments %}
-                        <div class="single-customer-review">
-                            <div class="customer-header">
-                                <img src="{% static 'images/customer/customer-1.png' %}" alt="customer" class="customer-thumb">
-                                <h3 class="customer-name">{{comment.name}} </h3>
-                                <p>{{comment.position}}</p>
-                            </div><!--/.customer-header-->
-                            <div class="customer-info">
-                                <p>{{comment.info}}</p>
-                                <div class="review-rating rating">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                </div><!--/.review-rating-->
-                            </div><!--/.customer-info-->
-                        </div><!--/.single-customer-review-->
-                        {% endfor %}
-                    </div><!--/#customer-reviews-->
-                </div><!--/.col-md-8-->
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/.our-customer-section-->
-<div id="footer-top-section" style="background-image:url({% static 'images/footer-pattern.jpg' %})">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title-area text-center">
-                        <h2 class="section-title">Bize Yazın
-                            <br>Sizleri Bekliyoruz</h2>
-                    </div><!--/.section-title-area-->
-                </div><!--/.col-md-12-->
-            </div><!--/.row-->
-            <div class="row">
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget-area footer-sidebar-top-1">
-                        <aside class="widget clearfix widget_address">
-                            <div class="widget-title-area">
-                                <h4 class="widget-title">address</h4>
-                            </div><!--/.widget-title-area-->
-                            <div class="widget-content">
-                                <p>112/B - Road Number 08/A Dhanmondi, Dhaka, Bangladesh</p>
-                            </div>
-                        </aside><!--/.widget_address-->
-                    </div><!--/.footer-sidebar-top-1-->
-                </div><!--/.col-md-3-->
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 animated" data-animation="fadeInUp" data-animation-delay="400">
+							<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+								<p class="box-heading">
+									<span style="font-size:15px;">Açık Büfe</span>
+								</p>
+							</div>
+							<div class="picture">
+								<img src="{% static 'k3.jpg' %}" class="img-responsive" alt=""/>
 
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget-area footer-sidebar-top-2">
-                        <aside class="widget clearfix widget_call_us">
-                            <div class="widget-title-area">
-                                <h4 class="widget-title">call</h4>
-                            </div><!--/.widget-title-area-->
-                            <div class="widget-content">
-                                <p>+88 0215469875</p>
-                                <p>666 35874692050</p>
-                            </div>
-                        </aside><!--/.widget_call_us-->
-                    </div><!--/.footer-sidebar-top-2-->
-                </div><!--/.col-md-3-->
+								<div class="portfolio-overlay-2">
+									<div class="icons">
+										<div>
+											<h1>Açık Büfe</h1>
+											<p class="line"></p>
+                                            <p class="rating"><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
+											<span class="icon"> <a href="/bodrum-marmaris-mutfak/open/acik-bufe/" class="#">İncele</a></span>
+										</div>
+									</div>
+								</div>
 
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget-area footer-sidebar-top-3">
-                        <aside class="widget clearfix widget_mail_us">
-                            <div class="widget-title-area">
-                                <h4 class="widget-title">mail</h4>
-                            </div><!--/.widget-title-area-->
-                            <div class="widget-content">
-                                <p>yourmail@gmail.com</p>
-                                <p>Hotelrmail@gmail.com</p>
-                            </div>
-                        </aside><!--/.widget_mail_us-->
-                    </div><!--/.footer-sidebar-top-3-->
-                </div><!--/.col-md-3-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <div class="col-sm-6 col-md-3">
-                    <div class="widget-area footer-sidebar-top-4">
-                        <aside class="widget clearfix widget_social_media">
-                            <div class="widget-title-area">
-                                <h4 class="widget-title">social Account</h4>
-                            </div><!--/.widget-title-area-->
-                            <div class="widget-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div><!--/.widget-social-->
-                        </aside> <!--/.widget_social_media-->
-                    </div><!--/.footer-sidebar-top-4-->
-                </div><!--/.col-md-3-->
-            </div><!--/.row-->
-        </div><!--/.container-fluid-->
-    </div><!--/#footer-top-section-->
+<div class="parallax-2 testimonial">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="herotext">
+								<p class="cross-line animated" data-animation="fadeInUp" data-animation-delay="400">
+									<span>Müşteri Yorumlarmız</span>
+								</p>
+								<div class="line-2 animated" data-animation="fadeInUp" data-animation-delay="400">Müşterilerimizin Bizim İçin Düşündükleri</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1">
+							<div class="testimonial-carousel animated" data-animation="fadeInUp" data-animation-delay="800">
+								{% for comment in comments %}
+								<div>
+									<div class="icon"><i class="fa fa-quote-left" aria-hidden="true"></i></div>
+									<div class="description">{{comment.info}}</div>
+									<div class="star">
+										<ul>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+									<div class="name">- {{comment.name}} -</div>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /. TESTIMONIALS ENDS
+				========================================================================= -->
+			<!-- OUR TEAM STARTS
+				========================================================================= -->
+			<div class="our-team" id="team">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="herotext">
+								<p class="box-heading animated" data-animation="fadeInUp" data-animation-delay="400">
+									<span>Bizi tercih Eden Şeflerimiz</span>
+								</p>
+								<div class="description animated" data-animation="fadeInUp" data-animation-delay="600">Sektörün En iyilerinden En iyi Deneyimler</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						{% for cheff in cheffs %}
+						<div class="col-lg-3 col-md-3 col-sm-6 animated" data-animation="fadeIn" data-animation-delay="800">
+							<div class="block">
+								<div class="picture"><img src="{% if cheff.image %}{{ cheff.image.url }}{% else %}{% endif %}" class="img-responsive center-block" alt=""></div>
+								<div class="name"><a href="">{{cheff.name}}</a></div>
+								<div class="designation">{{cheff.restaurant}}</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+<div class="container-fluid newsletter">
+				<div class="row row1">
+					<div class="col-lg-4 col-lg-offset-4">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<h1>STAY UP TO DATE</h1>
+							<div class="description">Sign up to  newsletter for the latest on all things Suitsupply</div>
+						</div>
+						<form class="form-inline animated" data-animation="fadeInUp" data-animation-delay="600">
+							<div class="form-group">
+								<input type="email" class="form-control" id="newsletter" placeholder="Enter you e-mail Address">
+							</div>
+							<button type="submit" class="btn btn-default"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
 {% endblock %}
 
 

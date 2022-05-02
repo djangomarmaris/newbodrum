@@ -33,56 +33,30 @@
 
 
 {% block content %}
-<br>
-    <section class="our-gallery-section zero-pd-top">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="section-title-area text-center zero-pd-top">
-                    <h2 class="section-title italic-style zero-mr-top">Neden
-                        <br> Bodrum Marmaris Mutfak</h2>
-
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="section-align-title-area">
-                        <h2 class="section-align-title">En İyi
-                            <br>Ürünler
-                            <br>Müşteri ve
-                            <br>Memnuniyeti</h2>
-                        <p>Marmaris Mutfak Ailesi, 2009 yılında, sektöründe yenilikci ve öncü çözümler üretmeyi hedefleyerek sorumluluk bilinciyle kuruldu. Türkiye çapında, konusunda lider markaların bölge temsilciliğini yapmakta olan Marmaris Mutfak, bölgede sektörünün ihtiyaç duyduğu ürün yelpazesini de takip ederek; Endüstriyel Mutfak & Set Üstü Ürünler, Cam ve Porselen Ürünler başta olmak üzere, sektörümüzün ihtiyaç duyduğu birçok ana ve ara ürünü bünyesinde bulundurmaktadır. Odak noktası "Müşteri" olan Marmaris Mutfağın amacı; her geçen gün değişen ve ihtiyaçlarının farkında olan müşteri kitlesinin yaşamlarına özel çözümler sunarak hizmet vermektir. Marmaris Mutfak Ailesi, Satış & Pazarlamasını yaptığı ürünlerde, insan yaşamına değer veren, kaliteyi ilke olarak benimseyen, yılların vermiş olduğu tecrübe ve işbirliği ile değişimlere açık, kendisine duyulan güvenin sorumluluğuyla istikrarlı bir şekilde büyümektedir.</p>
-                    </div><!--/.section-align-title-area-->
-                </div><!--/.col-md-6-->
-                <div class="col-md-6">
-                    <div class="row gallery-item-content">
-                        <div class="col-sm-6 padding-reset">
-                            <a href="{% static '22.jpeg' %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% static '22.jpeg' %}">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 padding-reset">
-                            <a href="{% static '44.jpeg' %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% static '44.jpeg' %}">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 padding-reset">
-                            <a href="{% static '55.jpeg' %}" class="image-popup-btn">
-                                <img alt="Cup Of Coffee" src="{% static '55.jpeg' %}">
-                            </a>
-                        </div>
-                        <div class="col-sm-6 padding-reset">
-                            <a href="{% static '66.jpeg' %}" class="image-popup-btn">
-                                <img alt="Snowpiercer" src="{% static '66.jpeg' %}">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/.our-gallery-section-->
+<div class="inner-banner title-area text-center image-5">
+			<div class="container title-area-content">
+				<h1 class="animated" data-animation="fadeInUp" data-animation-delay="200">Marmaris Bodrum Mutfak</h1>
+				<h2 class="animated" data-animation="fadeInDown" data-animation-delay="200">All about delicieux</h2>
+			</div>
+		</div>
+{% for history in historys %}
+		<div class="white-bg">
+			<!-- ABOUT US STARTS
+				========================================================================= -->
+			<div class="container about-us" id="about">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<div class="herotext animated" data-animation="fadeInUp" data-animation-delay="400">
+							<p class="box-heading">
+								<span>Hakkımızda</span>
+							</p>
+						</div>
+						<div class="description animated" data-animation="fadeInDown" data-animation-delay="800">{{history.about}}</div>
+					</div>
+					<div class="col-lg-6 col-md-6 animated" data-animation="fadeIn" data-animation-delay="600"><img src="{% if history.image %}{{ history.image.url }}{% else %}{% endif %}" class="img-responsive center-block" alt=""></div>
+				</div>
+			</div>
+{% endfor %}
 {% endblock %}
 
 
